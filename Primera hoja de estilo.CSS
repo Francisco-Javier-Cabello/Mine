@@ -1,0 +1,120 @@
+        h1 {
+            font-family: "times new roman";
+            font-weight: bolder;
+		    background-color:grey;
+            text-align: center;
+            padding: 0.5em;
+            text-shadow: 0.1em 0.1em 0.5em white;
+        }
+		h2 {
+            font-family:arial; color: green;
+            font-size:130%;
+            font-weight: bolder;
+            Width: 20em;
+            height: auto;
+            Margin: 0.2em 0em;
+            Border: Outset;
+            Border-radius: 15px;
+            Padding: 0.5em;
+            text-align: center;
+            font-size: 1.2em;
+            background-color:floralwhite;
+            position: relative;
+            text-shadow: 0.1em 0.1em 0.2em lightgreen;
+        }
+        h3 {
+            font-family: "times new roman";
+            font-weight: bolder;
+		    Width: 25em;
+            height: auto;
+            Margin: 0.2em 0em;
+            Border: Groove;
+            Border-radius: 15px;
+            Padding: 0.5em;
+            text-align: center;
+            font-size: 1.2em;
+            background-color:burlywood;
+            position: relative;
+            text-shadow: 0.05em 0.05em 0.2em white;
+        }
+        body {
+            font-family: times new roman;
+            font-size: 0.8em;
+            background-color: antiquewhite;
+            text-align: left;
+        }
+        div,p {
+            font-family: "times new roman";
+            font-size: 1.2em;
+            text-align: left;
+        }
+        
+        .Boton {
+            Width:250px;
+            height: auto;
+            Margin: 0.2em 0em;
+            Border: Outset;
+            Border-radius: 15px;
+            Padding: 0.5em;
+            text-align: center;
+            font-size: 1.2em;
+            background-color: darkgoldenrod;
+            position: relative;
+        }
+        
+        table {
+            Width:500px;
+            height: auto;
+            Margin: 0.2em 0em;
+            Border: Solid;
+            Border-color: Black;
+            Border-radius: 15px;
+            Padding: 0.5em;
+            text-align: center;
+            font-size: 1.2em;
+            color:blanchedalmond;
+            background-color:darkolivegreen;
+            position: relative;
+            float:right;
+            margin-top: -270px;
+            margin-right: 100px;
+        }
+        
+        th {
+            Border: Solid;
+            Border-color: Black;
+            Border-radius: 5px;
+            text-align: center;
+            font-size: 1.2em;
+            color:darkolivegreen;
+            background-color:blanchedalmond;
+        }
+        
+        td {
+            Border: Solid;
+            Border-color: Black;
+            Border-radius: 10px;
+            text-align: center;
+            font-size: 1em;
+            color:darkolivegreen;
+            background-color:blanchedalmond;
+        }
+        
+        .transicion {
+            animation: animacion1 2s infinite;
+        }
+        
+        @keyframes animacion1{
+            from {
+                background-color:floralwhite;
+            }
+            to {
+                background-color:burlywood;
+            }
+        }
+                   
+        a {text-decoration: none}
+        a:link  {color: black; font-weight: bolder;}
+        a:visited  {color:black}
+        a:hover  {text-decoration: underline}
+        a:active  {background-color:chartreuse}

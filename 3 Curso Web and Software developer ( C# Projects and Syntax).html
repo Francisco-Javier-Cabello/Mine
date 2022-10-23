@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+    
+<head>
+	<title>C# Course (Projects and Syntax)</title>
+    <link rel=stylesheet type="text/css" href="../normalize.css">
+    <link rel=stylesheet type="text/css" href="../main.css">
+    <link rel=stylesheet type="text/css" href="Primera%20hoja%20de%20estilo.css">
+</head>
+
+<body style=padding:10px;>
+	<h1 id="Principio">C# Course (Projects and Syntax)</h1>
+	    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Module 1: Anatomy of a C# Program</p>  
+    <a Class="Boton"; href="#Modulo 1 Apartado 1">C# Program Structure</a>
+    <a Class="Boton"; href="#Modulo 1 Apartado 2">Classes</a>
+    <a Class="Boton"; href="#Modulo 1 Apartado 3">Program Entry Point</a><br>
+    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Module 2: Projects and Syntax</p>   
+    <a Class="Boton"; href="#Modulo 2 Apartado 1">Statements</a>
+    <a Class="Boton"; href="#Modulo 2 Apartado 2">Expressions</a>
+    <a Class="Boton"; Id="Boton 1"; href="#Modulo 2 Apartado 3">Compiling a .NET Application</a>
+    <a Class="Boton"; href="#Modulo 2 Apartado 4">Framework Base Class Library</a>
+    <br>
+    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Module 3: Examining a .NET Application</p>  
+    <a Class="Boton"; href="#Modulo 3 Apartado 1">Introducing Assemblies</a><br>
+    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Module 4: Building .NET Applications</p>  
+    <a Class="Boton"; href="#Modulo 4 Apartado 1">Building .NET Applications</a>
+    <a Class="Boton"; Id="Boton 1"; href="#Modulo 4 Apartado 2">Microsoft Intermediate Language</a><br>
+    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Module 5: What is C#?</p>  
+    <a Class="Boton"; href="#Modulo 5 Apartado 1">What is C#?</a>
+    <a Class="Boton"; Id="Boton 1"; href="#Modulo 5 Apartado 2">Using Our New List</a>
+    <a Class="Boton"; href="#Modulo 5 Apartado 3">Practice Time</a>
+    <br>
+    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Pre-Exam</p>  
+    <a Class="Boton"; href="#PRE-EXAM">Pre-Exam</a><br>
+    <br>
+    
+<h1>MODULE 1: ANATOMY OF A C# PROGRAM</h1>
+    <div>
+        <h2 id="Modulo 1 Apartado 1">1.1 C# Program Structure</h2>
+        <p><ul>
+            <li>C languages have a long tradition of Hello, World! sample applications</li><br>
+            <ul>   
+                <li>First used in <i>The C Programming Language</i> by brian Kernigham and Dennis Ritchie</li>
+                <li>Original C code</li><br>
+                <ul>
+                    <li style="color:black; font-weight:bolder;">main ( )  {</li>
+                    <li style="color:black; font-weight:bolder;">&nbsp;&nbsp;&nbsp;printf ("hello, world");</li>
+                    <li style="color:black; font-weight:bolder;">}</li><br>
+                </ul>
+            </ul>
+            <li style="color:darkblue; font-weight:bolder; font-size:1.5em;">Namespaces</li><br>
+            <li>Namespace definition for the sample</li><br>
+            <ul>
+                <li style="color:black; font-weight:bolder;">namespace HelloWorld</li>
+                <li style="color:black; font-weight:bolder;">{</li>
+                <li style="color:black; font-weight:bolder;">&nbsp;&nbsp;...</li>
+                <li style="color:black; font-weight:bolder;">}</li><br>
+            </ul>
+            <li>Namespaces bring order and structure out of chaos</li><br>
+            <ul>
+                <li>Could instead use increasingly long names</li><br>
+                <li>Namespaces solve the problem nicely</li><br>
+            </ul>
+            <li>Almost all .NET objects have a root namespace <i>System</i></li><br>
+            <li>Related technologies from Microsoft usually use <i>Microsoft</i></li><br>
+            <li>Third parties generally use company name</li><br>
+            <li>Warning! Nothing prevents you from using anyone else's namespace name</li><br>
+            <li>Namespaces can be nested</li><br>
+            <ul>
+                <li>System.Data.Sql</li>
+                <li>System.Text.RegularExpressions</li><br>
+            </ul>
+            <li>Floyd object could be in the multiple namespaces</li><br>
+            <ul>
+                <li>System.Floyd</li>
+                <li>System.Data.Floyd</li>
+                <li>System.Data.Sql.Floyd</li>
+                <li>System.Text.Floyd</li>
+                <li>System.Text.RegularExpessions.Floyd</li><br>
+            </ul>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 1 Apartado 2">1.2 Classes</h2>
+        <p><ul>
+            <li>Major structure in the program is the HelloWorld class</li><br>
+            <ul>
+                <li style="color:black; font-weight:bolder;">class Program</li>
+                <li style="color:black; font-weight:bolder;">{</li>
+                <li style="color:black; font-weight:bolder;">&nbsp;&nbsp;...</li>
+                <li style="color:black; font-weight:bolder;">}</li><br>
+                <li>Definition is entirely in namespace definition</li><br>
+                <li>Full name is HelloWorld.Program</li><br>
+                <li>Blueprint for an object in memory</li><br>
+                <li>Classes are the foundation for object-oriented programming</li>
+            </ul>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div> 
+    <div>
+        <h2 id="Modulo 1 Apartado 3">1.3 Program Entry Point</h2>
+        <p><ul>
+            <li>Main is the program entry point</li><br>
+            <ul>
+                <li>Compiler needs to know where to start execution</li><br>
+            </ul>
+            <li>Specific requirements</li><br>
+            <ul>
+                <li>Must be a static method</li><br>
+                <li>Return void or int</li><br>
+                <li>Zero or one parameter: array of strings</li><br>
+            </ul>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div> 
+<h1>MODULE 2: PROJECTS AND SYNTAX</h1>
+    <div>
+        <h2 id="Modulo 2 Apartado 1">2.1 Statements</h2>
+        <p><ul>
+            <li>Every block of C# code consists of one or more statements</li><br>
+            <li>Many kinds</li><br>
+            <ul>
+                <li>Declaration statemens</li>
+                <li>Expession statemens</li>
+                <li>Selection statemens</li>
+                <li>Iteration statemens</li>
+                <li>Jump statemens</li>
+                <li>Exception handling statemens</li><br>
+            </ul><br>
+            <li>Embedded statements are particularly interesting</li><br>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 2 Apartado 2">2.2 Expressions</h2>
+        <p><ul>
+            <li>Combination of operators and operands that have or produce a value</li><br>
+            <ul>
+                <li>Simplest are literals: 5 or "Hello, World!"</li>
+                <li>Variable that contains a value is an expression</li>
+                <li>Define expression that perform calculation</li>
+                <li>Make them arbitrarily complex</li>
+            </ul><br>
+            <li>Also manages base services</li><br>
+            <li>Can run both <i>managed</i> and <i>unmanaged</i> code</li><br>
+          </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 2 Apartado 3">2.3 Compiling a .NET Application</h2>
+        <p><ul>
+            <li>Complier converts your source code to IL</li><br>
+            <li>At run time, invokes a <i>just-in-time</i> compiler to create native executable code</li><br>
+            <img src="Compiler.png" alt="example image" style="width:25em;height:8em;float: center; margin-top: 5px; margin-left: 150px; margin-bottom:15px;"><br>
+            <li>Takes advantage of the host processor</li><br>
+            <li>Surprisingly, JIT compiler isn't much overhead</li><br>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 2 Apartado 4">2.4 Framework Base Class Library</h2>
+        <p><ul>
+            <li>Base Class Library contains huge amounts of functionality</li><br>
+            <ul>
+                <li>Library of classes with properties and methods</li>
+                <li>Extensive namespaces provide a number of custom operations</li><br>
+            </ul>
+            <li style="color:darkblue; font-weight:bolder; font-size:1.5em;">A Few Common Namespaces</li><br>
+            <img src="Namespaces.png" alt="example image" style="width:45em;height:25em;float: center; margin-top: 5px; margin-left: 80px; margin-bottom:15px;"><br>
+            <li style="color:darkblue; font-weight:bolder; font-size:1.5em;">.NET Languages</li><br>
+            <li>You can use several Microsoft languages with .NET: Visual Basic, C#, C++, and F#</li><br>
+            <ul>
+                <li>Each provides an implementation of the Common Language Specifications (CLS)</li>
+                <li>Common Type System (CTS) provides types</li><br>
+            </ul>
+            <li>In theory, equivalent code in any language compiles to the same IL</li><br>
+            <ul>
+                <li>But is rarely the case for non-trivial operations</li>
+            </ul>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+<h1>MODULE 3: EXAMINING A .NET APPLICATION</h1>
+    <div>
+        <h2 id="Modulo 3 Apartado 1">3.1 Introducing Assemblies</h2>
+        <p><ul>
+            <li>When you compile managed code, you create an <i>assembly</i></li><br>
+            <ul>
+                <li>different from an unmanaged code EXE or DLL</li><br>
+                <li>Contains <i>metadata</i> in the <i>manifest</i></li><br>
+                <ul>
+                    <li>Version, name, culture and security requirements</li>
+                    <li>List of other files that belong to the assembly, if any</li>
+                    <li>List of public types defined in the assembly</li>
+                    <li>List of external references required to run</li><br>
+                </ul>
+            </ul>
+            <li style="color:darkblue; font-weight:bolder; font-size:1.5em;">What Kind of Programs Can You Create?</li><br>
+            <li>Support for many kinds of applications</li><br>
+            <ul>
+                <li>Visual Studio provides templates for them</li><br>
+                <ul>
+                    <li>Windows application</li>
+                    <li>Console application</li>
+                    <li>Class library</li>
+                    <li>Windows control library</li>
+                    <li>Web control library</li>
+                    <li>ASP.NET Web site</li><br>
+                </ul>
+            </ul>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div> 
+<h1>MODULE 4: BUILDING .NET APPLICATIONS</h1>
+    <div>
+        <h2 id="Modulo 4 Apartado 1">4.1 Building .NET Applications</h2>
+        <p><ul>
+            <li>In the developer powershell for vs 2022 (In my case)</li><br>
+            <li>Type csc /? to know the options you can use with the compiler</li><br>
+            <li style="color:darkblue; font-weight:bolder; font-size:1.5em;">Creating the first .NET program</li><br>
+            <li>In this ocassion we're gonna do it in Notepad</li><br>
+            <li style="color:mediumseagreen; font-weight: bold; list-style: none;">class HelloWorld</li>
+            <li style="color:mediumseagreen; font-weight: bold; list-style: none;">{</li>
+            <li style="color:mediumseagreen; font-weight: bold; list-style: none;">&nbsp;&nbsp;public static void Main()</li>
+            <li style="color:mediumseagreen; font-weight: bold; list-style: none;">&nbsp;&nbsp;{</li>
+            <li style="color:indianred; font-weight: bold; list-style: none;">&nbsp;&nbsp;&nbsp;&nbsp;// Display text in the console window <span style="color:gray;">(This is the way to add comments)</span></li>   
+            <li style="color:mediumseagreen; font-weight: bold; list-style: none;">&nbsp;&nbsp;&nbsp;&nbsp;System.Console.WriteLine("Hello, World!");</li>
+            <li style="color:mediumseagreen; font-weight: bold; list-style: none;">&nbsp;&nbsp;}</li>
+            <li style="color:mediumseagreen; font-weight: bold; list-style: none;">}</li><br>
+            <li>Instead of been typing System. all the time, we can place at the begining of the file the "<span style="color:mediumseagreen; font-weight: bold;">using System;</span>"</li><br>
+            <li style="color:mediumseagreen; font-weight: bold; list-style: none;">using System;</li><br>
+            <li style="color:mediumseagreen; font-weight: bold; list-style: none;">class HelloWorld</li>
+            <li style="color:mediumseagreen; font-weight: bold; list-style: none;">{</li>
+            <li style="color:mediumseagreen; font-weight: bold; list-style: none;">&nbsp;&nbsp;public static void Main()</li>
+            <li style="color:mediumseagreen; font-weight: bold; list-style: none;">&nbsp;&nbsp;{</li>
+            <li style="color:indianred; font-weight: bold; list-style: none;">&nbsp;&nbsp;&nbsp;&nbsp;// Display text in the console window</li>   
+            <li style="color:mediumseagreen; font-weight: bold; list-style: none;">&nbsp;&nbsp;&nbsp;&nbsp;Console.WriteLine("Hello, World!");</li>
+            <li style="color:mediumseagreen; font-weight: bold; list-style: none;">&nbsp;&nbsp;}</li>
+            <li style="color:mediumseagreen; font-weight: bold; list-style: none;">}</li><br>
+        </ul></p> 
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div> 
+    <div>
+        <h2 id="Modulo 4 Apartado 2">4.2 Microsoft Intermediate Language</h2>
+        <p><ul>
+            <li>.Net Framework includes a tool to disassemble your code to IL</li><br>
+            <ul>
+                <li>Can give you insght into how your code is compiled</li>
+                <li>Useful for debugging some kinds of issues</li><br>
+            </ul>
+            <li>Also includes an assembler tool</li><br>
+        <li>To find out this coding we use the <span style="color:mediumseagreen; font-weight: bold;">ildasm</span> command in the developer powershell</li><br>
+        </ul></p> 
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+<h1>MODULE 5: WHAT IS C#?</h1>
+    <div>
+        <h2 id="Modulo 5 Apartado 1">5.1 What is C#?</h2>
+        <p><ul>
+            <li>Wikipedia: Multi-paradigm programming language</li><br>
+            <ul>
+                <li>Amazing, accurate buzzworld-laden description!</li><br>
+            </ul>
+            <li>Design goals</li><br>
+            <ul>
+                <li>Simple, modern, general-porpuse, object-oriented</li>
+                <li>Support for software engineering principles</li>
+                <li>Usable for distributed components</li>
+                <li>Source code portability</li>
+                <li>Support for internationalization</li>
+                <li>For both hosted and embedded systems</li>
+                <li>Not intended to compete with C or assembly language</li><br>
+            </ul>
+            <li style="color:darkblue; font-weight:bolder; font-size:1.5em;">History of C#</li><br>
+            <li>Amders Hejlsberg is principal designer and lead architect</li><br>
+            <ul>
+                <li>Formed a team in late 1990s to build a language for the developing .NET Framework</li>
+                <li>C# has roots in C++ and Java, all descendants of C</li><br>
+            </ul>
+            <li>Name came from musical notation</li><br>
+            <ul>
+                <li>Sharp (<i>#</i>) is a semitone higher in pitch than the base note</li>
+                <li>Convention is to use a standard keyboard's number sign, #</li><br>
+            </ul>
+            <li style="color:darkblue; font-weight:bolder; font-size:1.5em;">Why Should You Use C#?</li><br>
+            <li>Provides a great deal of power and control</li><br>
+            <ul>
+                <li>At a high level of abstraction</li><br>
+            </ul>
+            <li>Much of the power is in language features</li><br>
+            <ul>
+                <li>But much is in the .NET Framework and CLR</li><br>
+            </ul>
+            <li style="color:darkblue; font-weight:bolder; font-size:1.5em;">Standard C#</li><br>
+            <li>C# is a Microsoft creation</li><br>
+            <ul>
+                <li>But in August 2000 submitted for standardization</li>
+                <li>Ecma International (formerly the European Computer Manufacturer's Association, ECMA)</li><br>
+                <ul>
+                    <li>ECMA-334, the C# Language Specification</li>
+                    <li>ISO/IEC 2370:2003, Information technology -- C# Language Specification</li>
+                    <li>ECMA-335, the Common Language Infrastructure specification (CLI)</li><br>
+                </ul>
+            </ul>
+        </ul></p> 
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+<h1>PRE-EXAM:</h1>
+    <div>
+        <h2 id="PRE-EXAM">PRE-EXAM</h2>
+        <p><ul>
+            <img src="NET%20Architecture.png" alt="example image" style="width:45em;height:20em;float: center; margin-top: 5px; margin-left: 80px; margin-bottom:15px;"><br>
+            <img src="Building%20a%20NET%20Application.png" alt="example image" style="width:45em;height:12em;float: center; margin-top: 5px; margin-left: 80px; margin-bottom:15px;"><br>
+            <img src="Intermediate%20Language.png" alt="example image" style="width:45em;height:45em;float: center; margin-top: 5px; margin-left: 80px; margin-bottom:15px;"><br>
+            <img src="C%20Language.png" alt="example image" style="width:30em;height:10em;float: center; margin-top: 5px; margin-left: 80px; margin-bottom:15px;"><br>
+        </ul></p> 
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+</body>
+<footer>
+	<p>Authored by Francisco Javier Cabello Gonzalez &copy; 2022</p>
+</footer>
+</html>

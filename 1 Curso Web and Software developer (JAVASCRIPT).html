@@ -1,0 +1,1497 @@
+<!doctype html>
+<html>
+    
+<head>
+	<title>JAVASCRIPT Course</title>
+    <link rel=stylesheet type="text/css" href="../normalize.css">
+    <link rel=stylesheet type="text/css" href="../main.css">
+    <link rel=stylesheet type="text/css" href="Primera%20hoja%20de%20estilo.css">
+</head>
+
+<body style=padding:10px;>
+	<h1 id="Principio">JAVASCRIPT Course</h1>
+	    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Module 1: Introduction to Javascript</p><br>   
+    <a Class="Boton"; href="#Modulo 1 Apartado 1">Introduction</a>
+    <a Class="Boton"; Id="Boton 1"; href="#Modulo 1 Apartado 2">Java Script From The Dawn Of The Web Part</a>
+    <a Class="Boton"; href="#Modulo 1 Apartado 3">Getting The Right Tools</a>
+    <a Class="Boton"; href="#Modulo 1 Apartado 4">Creating your first Javascript Program</a><br><br><br>
+    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Module 2: Core Concepts And Syntax</p><br>   
+    <a Class="Boton"; href="#Modulo 2 Apartado 1">The Structure And Content</a>
+    <a Class="Boton"; Id="Boton 1"; href="#Modulo 2 Apartado 2">Naming And Casing Best Practices</a>
+    <a Class="Boton"; href="#Modulo 2 Apartado 3">Understanding Variables</a>
+    <a Class="Boton"; href="#Modulo 2 Apartado 4">Working With Operators</a>
+    <p style="margin-top: 30px;">
+    <a Class="Boton"; href="#Modulo 2 Apartado 5">Working With Loops</a>
+    <a Class="Boton"; href="#Modulo 2 Apartado 6">Creating Functions</a>
+    <a Class="Boton"; href="#Modulo 2 Apartado 7">Understanding Types And Objects</a></p><br><br><br>
+    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Module 3: Getting A Handle On The DOM</p><br>   
+    <a Class="Boton"; href="#Modulo 3 Apartado 1">Introduction To The HTML Document Object Model</a>
+    <a Class="Boton"; Id="Boton 1"; href="#Modulo 3 Apartado 2">Accesing DOM Elements</a>
+    <a Class="Boton"; href="#Modulo 3 Apartado 3">Changing DOM Elements</a>
+    <p style="margin-top: 30px;">
+    <a Class="Boton"; href="#Modulo 3 Apartado 4">Creating DOM Elements</a>
+    <a Class="Boton"; href="#Modulo 3 Apartado 5">Responding To Events On The Page</a>
+    </p><br><br><br>
+    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Module 4: Working With Libraries</p><br>   
+    <a Class="Boton"; href="#Modulo 4 Apartado 1">Introduction To Libraries</a>
+    <a Class="Boton"; Id="Boton 1"; href="#Modulo 4 Apartado 2">Installing And Using jQuery</a>
+    <a Class="Boton"; href="#Modulo 4 Apartado 3">Modifying Web Pages Using jQuery</a>
+    <br><br><br>
+            
+<h1>MODULE 1: INTRODUCTION TO JAVASCRIPT</h1>
+    <div>
+        <h2 id="Modulo 1 Apartado 1">Introduction</h2>
+        <p><ul>
+            <li><dt>What is JAVASCRIPT:</dt></li><br>
+                <dd>It's the programming and scripting language developed 20 years ago by Brendan Eich who never would have thought it would become what it has today</dd><br>
+                <dd>JavaScript</dd><br>
+                    <ul>
+                       <li>Mentioned as the de-facto standard assembly of the web</li><br>
+                        <li>Used not only in browsers and the front end of web applications but also heavily on the server side for web application programming interfaces like <i>node.js</i></li><br>
+                        <li>Most commonly thought of as the most popular programming language in existence</li><br>
+                        <li>An essential for any programmer or web developer to learn</li><br>
+                    </ul><br>
+                <dd>It's the programming and scripting language developed 20 years ago by Brendan Eich who never would have thought it would become what it has today</dd><br>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 1 Apartado 2">Java Script From The Dawn Of The Web</h2>
+        <p><ul>
+            <li>JavaScript and Java are completely different languages, both in concept and desing and JavaScript has nothing to do with Java</li><br>
+                <ul>
+                    <li>Java is a heavy programming language requiring the installation of additional software on the system</li><br>
+                    <li>The makers of JavaScript latched on to the free publicity and buzz that Java was getting in 1995</li><br>
+                </ul>
+            <li>JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997</li><br>
+            <li>ECMA-262 is the official name. ECMAScript 6 (released in June 2015) is the latest official version of JavaScript.</li><br>
+            <li>JavaScript functions primarily within a host environment like a web browser althoguh others such as Adobe Photoshop, Adobe Acrobat ans NoSQL databases are fairly popular as well</li><br>
+            <li>JavaScript is primarily used as a client-side scripting language</li><br>
+                <ul>
+                    <li>Means that most of the coding is written directly into the HTML page and parsed by the browser when the page is rendered on the client</li><br>
+                    <li>Primary function is to add to the level of interactivity on a what would otherwise have been a static page</li>
+                </ul><br>            
+        </ul></p>
+        <p><ul>
+            <li>What can JavaScript do for you?</li><br>
+                <ul>
+                    <li>Modify the HTML content of the page</li><br>
+                    <ul>
+                        <li>document.getElementById(<span style=color:blue;>"demo"</span>).inner = <span style=color:blue;>"Hello Javascript"</span>;</li><br>
+                    </ul>
+                    <li>Change HTML attributes</li><br>
+                    <ul>
+                        <li>var image = document.getElementById(<span style=color:blue;>"myImage"</span>);<br>
+                        image.src = <span style=color:blue;>"images/newimg.jpg"</span>;</li><br>
+                    </ul>
+                    <li>Change HTML styles through CSS</li><br>
+                    <ul>
+                        <li>document.getElementById(<span style=color:blue;>"demo"</span>).style.fontsize = <span style=color:blue;>"25px"</span>;</li><br>
+                    </ul>
+                    <li>Validate data input into forms</li><br>
+                </ul><br>            
+        </ul></p>
+        <p><ul>
+            <li>Some practical examples</li><br>
+                <ul>
+                    <li>Moving the world in Google maps</li><br>
+                    <li>Autopopulating from fields</li><br>
+                    <li>Checking the format of an email address or phone number</li><br>
+                    <li>Moving HTML elements across the screen</li><br>
+                    <li>Changing an element to display different costumer reviews every few seconds</li><br>
+                    <li>And much, much more...</li><br>
+                </ul><br>            
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div> 
+    <div>
+        <h2 id="Modulo 1 Apartado 3">Getting The Right Tools</h2>
+        <p><ul>
+            <li>The browser matters</li><br>
+                <ul>
+                    <li>The web browser is the primarily tool and enviroment in which you JavaScript runs and the choice of browser is important</li><br>
+                    <li>Though other development tools will exist modern browsers may have all you require to work with JavaScript already included</li><br>
+                    <ul>
+                        <li>Mozilla and Chrome are the best browsers to use when working with JavaScript</li><br>
+                        <li>Stay away from older browsers, especially older versions of IE</li><br>
+                    </ul>
+                </ul>
+            <li>Unlike many other programming languages JavaScript has no real program association meaning there isn't ONE program that you must or should use when coding JavaScript</li><br>
+            <li>All modern web editors will support JavaScript editing</li><br>
+            <li>Its so platform agnostic that you should really just stick with whatever program that you are using. This could be a free program like TextEdit, Notepad, Notepad++ or Aptana or additional programs that you have to pay for</li><br>
+            <li>Mozilla has a very usefull tool call Firebug, it allows to execute the JavaScript without needing to be saving the file and refreshing the browser to see how it works</li><br>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div> 
+    <div>
+        <h2 id="Modulo 1 Apartado 4">Creating your first JavaScript Program</h2>
+        <p><ul>
+            <li>JavaScript is included in everyone's browser but you still must program the actions that you want to occur on the page and when you want them to occur</li><br>
+                <ul>
+                    <li>At page load</li><br>
+                    <li>When a user clicks a Submit button</li><br>
+                    <li>When a user focuses on a particular field or away from that field</li><br>
+                    <li>When a user starts to type</li><br>
+                    <li>After a certain period of time</li><br>
+                </ul>
+            <li>A basic JavaScript program is simply a line of JavaScript code that is included directly in the HTML file that will execute when the page is loaded</li><br>
+            <li>You have a couple of options for adding JavaScript code to your HTML files</li><br>
+            <ul>
+                <li>Adding the JavaScript tag</li><br>
+                <ul style="line-height: 1.5em; font-weight: bolder; width:80%; padding: 1.5em 3em; background-color:burlywood; list-style-type: none">
+                    <li style="color:dodgerblue">&lt;head&gt;</li>
+                    <ul style="list-style-type: none">
+                        <li style="color:dodgerblue">&lt;title&gt;<span style="color:darkslategrey">Using JavaScript Tags</span>&lt;/title&gt;</li>
+                        <li style="color:dodgerblue">&lt;script <span style="color: darkolivegreen">type=</span><span style="color:darkgoldenrod">"text/javascript"</span>&gt;</li>
+                        <li style="color:dimgrey">//JavaScript goes here</li>
+                        <li style="color:dodgerblue">&lt;/script&gt;</li>
+                    </ul>
+                    <li style="color:dodgerblue">&lt;/head&gt;</li>
+                    <li style="color:dodgerblue">&lt;body&gt;</li>
+                    <li style="color:dodgerblue">&lt;/body&gt;</li>
+                    <li style="color:dodgerblue">&lt;/html&gt;</li><br>
+                </ul><br>
+                <li>The second option is to include multiple script tags which can appear in the &lt;body&gt; section</li><br>
+                <ul style="line-height: 1.5em; font-weight: bolder; width:80%; padding: 1.5em 3em; background-color:burlywood; list-style-type: none">
+                    <li style="color:dimgrey">&lt;!doctype html&gt;</li>
+                    <li style="color:dodgerblue">&lt;html&gt;</li>
+                    <li style="color:dodgerblue">&lt;head&gt;</li>
+                    <ul style="list-style-type: none">
+                        <li style="color:dodgerblue">&lt;title&gt;<span style="color:darkslategrey">Using JavaScript Tags</span>&lt;/title&gt;</li>
+                        <li style="color:dodgerblue">&lt;script <span style="color: darkolivegreen">type=</span><span style="color:darkgoldenrod">"text/javascript"</span>&gt;</li>
+                        <li style="color:dimgrey">//JavaScript goes here</li>
+                        <li style="color:dodgerblue">&lt;/script&gt;</li>
+                    </ul>
+                    <li style="color:dodgerblue">&lt;/head&gt;</li>
+                    <li style="color:dodgerblue">&lt;body&gt;</li>
+                    <ul style="list-style-type: none">
+                        <li style="color:dodgerblue">&lt;h1&gt;<span style="color:darkslategrey">JavaScript Tags Reference JavaScript that is embedded in the HTML page</span>&lt;/h1&gt;</li>
+                        <li style="color:dodgerblue">&lt;p&gt;<span style="color:darkslategrey">As an alternative you can link to external files.</span>&lt;/p&gt;</li>
+                        <li style="color:dodgerblue">&lt;script <span style="color: darkolivegreen">type=</span><span style="color:darkgoldenrod">"text/javascript"</span>&gt;</li>
+                        <li style="color:dimgrey">//Some more JavaScript code goes here</li>
+                        <li style="color:dodgerblue">&lt;/script&gt;</li>
+                    </ul>
+                    <li style="color:dodgerblue">&lt;/body&gt;</li>
+                    <li style="color:dodgerblue">&lt;/html&gt;</li><br>
+                </ul><br>
+                <li>The third option (often the best) is to link to external JavaScript files</li><br>
+                <ul style="line-height: 1.5em; font-weight: bolder; width:80%; padding: 1.5em 3em; background-color:burlywood; list-style-type: none">
+                    <li style="color:dodgerblue">&lt;script <span style="color: darkolivegreen">src=</span><span style="color:darkgoldenrod">"scripts/extscriptfile.js"</span><span style="color: darkolivegreen">type=</span><span style="color:darkgoldenrod">"text/javascript"</span>&gt;</li>
+                    <li style="color:dodgerblue">&lt;/script&gt;</li>
+                </ul><br>
+            </ul>
+            <li>JavaScript does not have any built-in pront or display functions but there are various ways that it can "display" information</li><br>
+            <li>Realize that these display options are often for developers and not end users</li><br>
+            <ul>
+                <li>Writing to an alert box</li><br>
+                <ul style="line-height: 1.5em; font-weight: bolder; width:80%; padding: 1.5em 3em; background-color:darkseagreen; list-style-type: none">
+                    <li>&lt;script&gt;</li><br>
+                    <li>window.alert(5+6);</li><br>
+                    <li>&lt;/script&gt;</li><br>
+                    <li><span style="color: firebrick">&#9679;</span>&nbsp;Quite an annoying way of getting information</li><br>
+                </ul><br>
+                <li>Writing HTML output</li><br>
+                <ul style="line-height: 1.5em; font-weight: bolder; width:80%; padding: 1.5em 3em; background-color:darkseagreen; list-style-type: none"><p style="font-size: 1em"><span style="color: firebrick">&#9679;</span>&nbsp;The document.write()</p>
+                    <li>&lt;script&gt;</li><br>
+                    <li>window.alert(5+6);</li><br>
+                    <li>&lt;/script&gt;</li><br>
+                    <li><span style="color: firebrick">&#9679;</span>&nbsp;Only for testing</li><br>
+                    <li><span style="color: firebrick">&#9679;</span>&nbsp;If done after page is loaded it eliminates all HTML</li><br>
+                </ul><br>
+                <li>Writing to an HTML element</li><br>
+                <ul style="line-height: 1.5em; font-weight: bolder; width:80%; padding: 1.5em 3em; background-color:darkseagreen; list-style-type: none"><p style="font-size: 1em"><span style="color: firebrick">&#9679;</span>&nbsp;In most of the cases that you want to "display" data you will use the innerHTML property and the DOM (Document Object M odel) in order to write information to the page</p>
+                    <li>&lt;script&gt;</li><br>
+                    <li>document.getElementById("demo").innerHTML=5+6;</li><br>
+                    <li>&lt;/script&gt;</li><br>
+                </ul><br>
+                <li>Writing into the browser console</li><br>
+                <ul style="line-height: 1.5em; font-weight: bolder; width:80%; padding: 1.5em 3em; background-color:darkseagreen; list-style-type: none"><p style="font-size: 1em"><span style="color: firebrick">&#9679;</span>&nbsp;Another option is console.log()</p>
+                    <ul style="list-style-type: none">
+                    <li><span style="color: firebrick">&#9679;</span>&nbsp;Used by developers</li><br>
+                    <li><span style="color: firebrick">&#9679;</span>&nbsp;Not intended to display information to end users</li><br>
+                    <li>&lt;script&gt;</li><br>
+                    <li>console.log(5+6);</li><br>
+                    <li>&lt;/script&gt;</li><br>
+                    </ul>    
+                </ul><br>
+            </ul>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+<h1>MODULE 2: CORE CONCEPTS AND SYNTAX</h1>
+    <div>
+        <h2 id="Modulo 2 Apartado 1">The Structure And Content</h2>
+        <p><ul>
+            <li>JavaScript is written in plain text just like HTML and CSS but does follow a very specific syntax which developers must learn</li><br>
+            <li>JavaScript is not a compiled language but an interpreted language meaning you write the code and hand it over to the web browser and it takes care of everything</li><br>
+            <ul>
+                <li>so no special compiler is necessary</li>
+                <li>Simple text files and a browser that has JavaScript enabled is all we need</li>
+            </ul><br>
+            <li>One of the <span style="text-transform: uppercase; font-weight: bold; font-size: 1.3em;">most important</span> things to remember about JavaScript is that it <span style="text-transform: uppercase; font-weight: bold; font-size: 1.3em;">is</span></li><br>
+            <ul>
+                <li style="list-style: none; text-transform: uppercase; font-weight: bold; font-size: 3em;">&nbsp;&nbsp;case sensitive!!!!</li><br>
+                <li>Coming from HTML and CSS even other programming languages this may not ring a bell</li>
+                <li style="list-style: none;">but we must remember it!</li><br>
+                <li style="margin-left: -25px"><b>HTML</b></li><br>
+                <ul>
+                    <li style="margin-left: -25px">&lt;p&gt;This is a paragraph&lt;/P&gt; --- works just fine, doesn't care about case though the preceding is sloopy and to be avoided for readability</li>
+                </ul><br>
+                <li style="margin-left: -25px"><b>CSS</b></li><br>
+                <ul>
+                    <li style="margin-left: -25px">Body {font-FAMILY:Arial;Font-Size:1.2em;cOLoR:blue;} - works just fine</li>
+                </ul><br>
+                <li style="margin-left: -25px"><b>JavaScript</b></li><br>
+                <ul>
+                    <li style="margin-left: -25px">Alert("Hello World"); - does not work</li>
+                    <li style="margin-left: -25px">alert("Hello World"); - does work because the alert function is declared in lowercase</li>
+                </ul><br>
+            </ul><br>
+            <li>So everything that you do in JavaScript is case sensitive</li>
+            <ul>
+                <li>Variables</li>
+                <li>Functions</li>
+                <li>Methods</li>
+                <li>Objects</li>
+                <li>You name it and its case sensitive!</li>
+                <li>If you don't get the case right you won't see any errors, your JavaScript code will simply not work</li>
+            </ul><br>
+            <li>This is the <span style="text-transform: uppercase; font-weight: bold; font-size: 1.3em;">most important</span> rule of the syntax but not the only one</li>
+        </ul></p>
+        <p><ul>
+            <li>Syntax</li>
+            <ul>
+                <li>A set of rules defining the way in which JavaScript progrmas are constructed</li>
+                <li>A computer program is simply a list of instructions to be executed</li><br>
+                <ul>
+                    <li>In JavaScript these are executed by the web browser</li>
+                    <li>These individual instructions are referred to as <i>statements</i></li><br>
+                    <li>Statements are separated by semicolons</li><br>
+                    <ul>
+                        <li style="font-size: 1.2em; font-weight: bold;"><span style="color:darkred;">var </span>x =<span style="color: blue"> 5</span>;</li>
+                        <li style="font-size: 1.2em; font-weight: bold;"><span style="color:darkred;">var </span>y =<span style="color: blue"> 6</span>;</li>
+                        <li style="font-size: 1.2em; font-weight: bold;"><span style="color:darkred;">var </span>z = x + y;</li>
+                    </ul><br>
+                    <li>Statements are composed of multiple elements</li><br>
+                    <ul>
+                        <li>Values</li>
+                        <li>Operators</li>
+                        <li>Expressions</li>
+                        <li>Keywords</li>
+                        <li>Comments</li><br>
+                    </ul>
+                    <li>Two types of values exist in JavaScript statements</li><br>
+                    <ul>
+                        <li>Literals - fixed values</li><br>
+                        <ul>
+                            <li>Numbers - written with or without decimal points and without quotes</li><br>
+                            <ul>
+                                <li>1001</li>
+                                <li>10.50</li>
+                            </ul><br>
+                            <li>Strings - written within single or double quotes</li><br>
+                            <ul>
+                                <li>"This is a string"</li>
+                                <li>"This is also a string'</li>
+                                <li>"55"</li><br>
+                            </ul>
+                            <li>Variables - often used to store data</li><br>
+                            <ul>
+                                <li>Keyword <i>var</i> is used to define the variable</li><br>
+                                <ul>
+                                    <li style="font-size: 1.2em; font-weight: bold;"><span style="color:darkred;">var </span>x;</li>
+                                    <li style="font-size: 1.2em; font-weight: bold;"><span style="color:darkred;">var </span>x =<span style="color: blue"> 5</span>;</li>
+                                    <li style="font-size: 1.2em; font-weight: bold;"><span style="color:darkred;">var </span>y =<span style="color: blue"> 6</span>;</li><br>
+                                </ul>
+                                <li>The = sign is used to assing a value</li><br>
+                                <ul>
+                                    <li style="font-size: 1.2em; font-weight: bold;">x =<span style="color: blue"> 6</span>;</li><br>
+                                </ul>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <li>Operators</li><br>
+                    <ul style="line-height: 1.5em;">
+                        <li>Used to assign values to variables</li>
+                        <ul>
+                            <li>Assignment operators</li>
+                            <ul>
+                                <li>=</li>
+                            </ul>
+                        </ul>
+                        <li>Used to compute values</li>
+                        <ul>
+                            <li>Arithmetic operators</li>
+                            <ul>
+                                <li>+-*/</li>
+                            </ul>
+                        </ul>
+                        <li>Used to evaluate values</li>
+                        <ul>
+                            <li>Comparison operators</li>
+                            <ul>
+                                <li>==,!=,&lt;,&gt;</li>
+                            </ul>
+                        </ul>
+                    </ul>
+                    <li>Expressions</li><br>
+                    <ul>
+                        <li>A combination of values, variables, and operators, which computes to a value</li>
+                        <li>The computation is referred to as an evaluation</li>
+                        <li>Expressions can also contain variables</li><br>
+                        <p><span style="Width:100px; height: auto; Margin: 1em 0.8em; Border: Outset; Border-radius: 15px; Padding: 1.2em; text-align: center; text font-size: 1.2em; background-color:darksalmon; position: relative;">15*10</span><span style="Width:100px; height: auto; Margin: 1em 0.8em; Border: Outset; Border-radius: 15px; Padding: 1.2em; text-align: center; text font-size: 1.2em; background-color:darksalmon; position: relative;">myValue + 25</span><span style="Width:100px; height: auto; Margin: 1em 0.8em; Border: Outset; Border-radius: 15px; Padding: 1.2em; text-align: center; text font-size: 1.2em; background-color:darksalmon; position: relative;">"John"+" "+ "Doe"</span></p><br><br
+                    </ul>
+                    <li>Keywords</li><br>
+                    <ul>
+                        <li>Used to identify various actions to perform</li><br>
+                        <ul>
+                            <li>Var - Defines a variable</li>
+                            <li>For - marks a block of coda to be executed so long as a condition is true</li>
+                            <li>If... else - marks a block of code to be executed based on a condition</li>
+                            <li>Return - exits a function</li>
+                            <li>Break - terminated a switch or a loop</li>
+                            <li>Function - declares a function</li>
+                        </ul>
+                        <li>&nbsp;&nbsp;None of these keywords will be allowed to be the name of a variable, object, or function that you create and ALL are case-sensitive</li>
+                        <li>Comments</li><br>
+                        <ul>
+                            <li>Can be added to any code within a JavaScript program in order to assist with readability and debugging</li>
+                            <li>Single lines are commented ussing //</li><br>
+                            <ul>
+                                <li style="color: rgb(50,105,50); font-weight: bold"><span style="font-size: 1.2em;"> //Here are some JavaScript comments</span></li>
+                                <li>Should genereally precede the code that you are commenting on</li>
+                                <li>Multiple lines are commented using <span style="color: rgb(50,105,50);font-size: 1.2em; font-weight: bold">&nbsp;/* these are some comments */</span></li><br>
+                            </ul>
+                        </ul>
+                        <li>The semicolon is the separator of JavaScript statements and most programs will include multiple lines of statements</li>
+                        <ul>
+                            <li>The semicolon is the important part</li>
+                            <li>It can often be omitted but it should never be just in case</li><br>
+                            <ul>
+                                <li style="font-size: 1.2em; font-weight: bold;"><span style="color:darkred;">var </span>x =<span style="color: blue"> 5</span>;</li>
+                                <li style="font-size: 1.2em; font-weight: bold;"><span style="color:darkred;">var </span>y =<span style="color: blue"> 6</span>;</li>
+                                <li style="font-size: 1.2em; font-weight: bold;"><span style="color:darkred;">var </span>z = x + y;</li>
+                                <li style="font-size: 1.2em; font-weight: bold;">document.getElementById(<span style="color: blue">"demo"</span>).innerHTML = z;</li><br>
+                            </ul>
+                        </ul>
+                        <li>Whitespaec doesn't matter in JavaScript just like HTML and CSS</li><br>
+                        <ul>
+                            <li>Add whitespace to improve readability</li>
+                            <li>Break long code statements over multiple lines at an operator whenever possible</li>
+                        </ul><br>
+                    </ul>    
+                </ul>
+            </ul>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 2 Apartado 2">Naming And Casing Best Practices</h2>
+        <p><ul>
+            <li>Once you have discussed how you MUST write JavaScript code its often important and useful to discuss how you SHOULD write code</li><br>
+            <ul>
+                <li>While this coyld be discussed at any time it seems to make sense at this point before we get further into defining the names of variables and gunctions and objects</li><br>
+            </ul>
+            <li>Style decisions do matter... not for functionality but in other areas</li><br>
+            <ul>
+                <li>Readability of the code</li>
+                <li>Consistency within the code</li>
+                <li>Consistency with the rest of the world</li>
+            </ul><br>
+            <li>The JavaScript standard states that  elements like variables and functions can contain various objects but cannont start with a number</li><br>
+            <ul>
+                <li>Letters</li>
+                <li>Numbers</li>
+                <li>Underscores</li>
+                <li>Dollar signs</li>
+                <li>Valid names</li><br>
+                <ul>
+                    <li>Var1</li>
+                    <li>My_Variable</li>
+                    <li>$My_Var</li><br>
+                </ul>
+                <li>Invalid names</li><br>
+                <ul>
+                    <li>1Variable</li>
+                    <li>2_Variable</li>
+                </ul><br>
+                <p style="
+                Width:300px;
+                height: auto;
+                Margin: 0.2em 0em;
+                Border: Solid;
+                Border-color: Black;
+                Border-radius: 15px;
+                Padding: 0.5em;
+                text-align: center;
+                font-size: 1.2em;
+                color:blanchedalmond;
+                background-color:firebrick;
+                position: relative;
+                float:right;
+                margin-top: -115px;
+                margin-right: 350px;">Just because something is allowed doesn't make it "right"</p>
+            </ul>
+            <li>Real life JavaScript programming is very visible and should follow specific naming conventions and rules</li><br>
+            <ul>
+                <li>Camel Case</li><br>
+                <ul>
+                    <li>A typical naming convention that uses capital letters for the first letter in each word</li>
+                    <li>Helps to join multiple words together without using underscores</li>
+                    <li>Avoids the use of the (-) character which isn't allowed in many languages</li>
+                    <li>Provides the ability to create very desctiptive variable names</li><br>
+                    <ul>
+                        <li>myVariable()</li>
+                        <li>myFunction()</li>
+                        <li>addNumbers()</li>
+                        <li>modifyBodyElement()</li>
+                        <li>changeCostumerInfo()</li>
+                    </ul><br>
+                </ul>
+            </ul>
+            <li>Names for variables and funtions</li><br>
+            <ul>
+                <li>In real life JavaScript variables and functions represent very useful and needed information</li>
+                <li>Objects should be named according to their purpose or the information that they contain in a meaningful fashion</li><br>
+                <ul>
+                    <li>submitButton instead of var1</li>
+                    <li>infoTextBox instead of myVariable</li>
+                </ul><br>
+                <li>Always begin variable names with a lower case letter</li>
+                <li>Create additional words, using camel case, to further distinguish and identify different elements</li>
+                <li>Match the variable names with the id and class names in HTML</li>
+            </ul><br>
+            <li>Another area where style guidelines exist is the area of spacing and indentation and a few general rules exist</li><br>
+            <ul>
+                <li>Always put spaces around operators and after commas</li><br>
+                <ul>
+                    <li style="font-size: 1.2em; font-weight: bold;"><span style="color:darkred;">var </span>x = y + z;</li>
+                    <li style="font-size: 1.2em; font-weight: bold;"><span style="color:darkred;">var </span>values = [<span style="color:darkblue;">"Volvo", "Saab", "Fiat"</span>];</li><br>
+                </ul>
+                <li>Always use four spaces of indentation for code blocks</li><br>
+                <ul>
+                    <li style="font-size: 1.2em; font-weight: bold;"><span style="color:darkred;">function </span>toCelsius(fahrenheit) {</li>
+                    <li style="font-size: 1.2em; font-weight: bold;"><span style="color:darkred;">&nbsp;&nbsp;&nbsp;&nbsp;return </span>(<span style="color:darkblue;">5</span> / <span style="color:darkblue;">9</span>) * (fahrenheit - <span style="color:darkblue;">32</span>);</li><br>
+                </ul>
+            </ul>
+            <li>While it is not required you should end all single statements with a semi-colon to prevent issues with JavaScript thinking they're missing and adding automatically</li><br>
+            <li>Complex statements require additional considerations</li><br>
+            <ul>
+                <li>Opening bracket goes on the end of the first line</li>
+                <li>One space before the opening bracket</li>
+                <li>Closing bracket on a new line without leading spaces</li><br>
+                <ul>
+                    <li style="font-size: 1.2em; font-weight: bold;"><span style="color:darkred;">var </span>person = {</li>
+                    <li style="font-size: 1.2em; font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;firstname = <span style="color:darkblue;"> "John",</span></li>
+                    <li style="font-size: 1.2em; font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;lastname = <span style="color:darkblue;"> "Doe",</span></li>
+                    <li style="font-size: 1.2em; font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;age = <span style="color:darkblue;"> 50,</span></li>
+                    <li style="font-size: 1.2em; font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;eyecolor = <span style="color:darkblue;"> "blue"</span></li>
+                    <li style="font-size: 1.2em; font-weight: bold;">};</li><br>
+                </ul>
+            </ul>
+            <li>There are conventions and rules for the various types of loops as well</li><br>
+            <li>The most common loops are "if" and "for" loops</li><br>
+                <ul>
+                    <li style="font-size: 1.2em; font-weight: bold; list-style: square"><span style="color:darkred;">for </span>(i = <span style="color:darkblue;">0</span>; i &lt; <span style="color:darkblue;">5</span>; i++) {</li>
+                    <li style="font-size: 1.2em; font-weight: bold; list-style: none">&nbsp;&nbsp;&nbsp;&nbsp;x += i;</li>
+                    <li style="font-size: 1.2em; font-weight: bold; list-style: none">}</li><br><br>
+                </ul>
+                <ul>
+                    <li style="font-size: 1.2em; font-weight: bold; list-style: square"><span style="color:darkred;">if </span>(time &lt; <span style="color:darkblue;">20</span>) {</li>
+                    <li style="font-size: 1.2em; font-weight: bold; list-style: none">&nbsp;&nbsp;&nbsp;&nbsp;greeting = <span style="color:darkblue;">"Good day"</span>;</li>
+                    <li style="font-size: 1.2em; font-weight: bold; list-style: none">} <span style="color:darkred;">else </span>{</li>
+                    <li style="font-size: 1.2em; font-weight: bold; list-style: none">&nbsp;&nbsp;&nbsp;&nbsp;greeting = <span style="color:darkblue;">"Good evening"</span>;</li>
+                    <li style="font-size: 1.2em; font-weight: bold; list-style: none">}</li><br><br>
+                </ul>
+         </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 2 Apartado 3">Understanding Variables</h2>
+        <p><ul>
+            <li>In any programming language you will frequently need to hold information for later use and that is where the variable comes in</li>
+            <li>Variables can be defined in order to carve out a little spot of memory in order to do two things</li><br>
+                <ul>
+                    <li>Hold contents for later retrieval</li>
+                    <li>Create a unique name with which the information can be identified</li><br>
+                </ul>
+            <li>Could be all types of information</li><br>
+                <ul>
+                    <li>Information a user inputs to a form</li>
+                    <li>Value of an HTML element</li>
+                    <li>Numbers, strings and Boolean values</li>
+                </ul><br>
+            <li>Variables are declared using the <i>var</i> keyword</li><br>
+                <ul style="line-height: 0.5em; font-weight: bolder; width:80%; padding: 1.5em 3em; background-color:azure; list-style: none;">
+                    <li><span style="color:cornflowerblue">var</span> textInfo = document.<span style="color:blueviolet">getElementById</span>(<span style="color: darkorange">"customerTextBox"</span>);</li><br>
+                </ul><br>
+            <li>Technically the var keyword is optional but you should always have it there</li><br>
+            <ul>
+                <li>You can declare tha variable first and then give it a value</li><br>
+                    <ul>
+                        <li style="font-size: 1.2em; font-weight: bold; list-style: square"><span style="color:darkred;">var </span>carName;</li>
+                        <li style="font-size: 1.2em; font-weight: bold; list-style: none">carName = <span style="color:darkblue;">"Volvo"</span>;</li><br>
+                    </ul>
+                <li>Alternatively you can just do both at the same time</li><br>
+                    <ul>
+                        <li style="font-size: 1.2em; font-weight: bold; list-style: square"><span style="color:darkred;">var </span>carName = <span style="color:darkblue;">"Volvo"</span>;</li><br>
+                    </ul>
+                <li>It's also possible for your declarations to include multiple variables on a single line or multiple lines</li><br>
+                    <ul>
+                        <li style="font-size: 1.2em; font-weight: bold; list-style: square"><span style="color:darkred;">var </span>person = <span style="color:darkblue;">"John Doe"</span>, carName = <span style="color:darkblue;">"Volvo"</span>, price = <span style="color:darkblue;">200</span>;</li><br>
+                    </ul>
+                    <ul>
+                        <li style="font-size: 1.2em; font-weight: bold; list-style: square"><span style="color:darkred;">var </span>person = <span style="color:darkblue;">"John Doe"</span>,</li>
+                        <li style="font-size: 1.2em; font-weight: bold; list-style: none">carName = <span style="color:darkblue;">"Volvo"</span>,</li>
+                        <li style="font-size: 1.2em; font-weight: bold; list-style: none">price = <span style="color:darkblue;">200</span>;</li><br>
+                    </ul>
+            </ul>
+            <li>In some cases we might declare a variable without a value and the variable would be <i>undefined</i></li><br>
+            <li>Ata a later time, even the next line of code, we would then define the value which can be of multiple types</li><br>
+                <ul>
+                    <li>Numbers - defined using an assignment operator and without using quotes</li>
+                    <li>Strings - defined using an assignment operators and with quotes</li>
+                    <li>Boolean - defined using the true or false keywords</li><br>
+                </ul><br>
+            <li>While other programming languages require you to define the type of the variable along with its value JavaScript does not because it is what is called a "loosely typed" language</li><br>
+            <li>Sometimes variables will need to contain multiple values simultaneously which is referred to as an <i>array</i></li><br>
+            <li>Arrays can be delared in various ways</li><br>
+                <ul>
+                    <li>Longhand</li><br>
+                        <ul>
+                            <li style="font-size: 1.2em; font-weight: bold; list-style: none"><span style="color:cornflowerblue;">var </span>multiValues = [ ];</li>
+                            <li style="font-size: 1.2em; font-weight: bold; list-style: none"><span style="color:cornflowerblue;">var </span>multiValues = <span style="color:cornflowerblue;">new </span>Array( );</li>
+                            <li style="font-size: 1.2em; font-weight: bold; list-style: none"><span style="color:cornflowerblue;">var </span>multiValues = Array( );</li>
+                            <li style="font-size: 1.2em; font-weight: bold; list-style: none"><span style="color:cornflowerblue;">var </span>multiValues = Array(5);</li><br>
+                        </ul>
+                    <li>Shorthand</li><br>
+                        <ul>
+                            <li style="font-size: 1.2em; font-weight: bold; list-style: none"><span style="color:cornflowerblue;">var </span>multiValues = [<span style="color: darkolivegreen">50</span>, <span style="color: darkolivegreen">60</span>, <span style="color:darkorange">"text"</span>, <span style="color: darkolivegreen">14</span>, <span style="color: darkorange">"moretext"</span>]</li>
+                        </ul><br><br>
+                </ul>
+            <li>Arrays are simply variables that hold multiples values with no theoretical limit to the number of values they can contain</li><br>
+            <li>You can request a specific value for display or modification using the <i>index</i></li><br>
+                <ul>
+                    <li>multiValues[2] = displays the value in the 3<sup>rd</sup> spot of the array because of the zero based index used in numbering the items in the array</li>
+                    <li>multiValues[6] = "another string of text" - would set the value to item 6 or create it if it didn't exist</li>
+                </ul><br>
+            <li>Arrays are everywhere in JavaScript</li><br>
+            <li>The real strength of JavaScript arrays  comes in their various properties and methods</li><br>
+                <ul>
+                    <li>Properties defin3e information about an array such as the Length property</li>
+                    <li>Methods define executable code and functionality that belong to the array or object</li><br>
+                        <ul>
+                            <li>Reverse()</li>
+                            <li>Join()</li>
+                            <li>Sort()</li>
+                        </ul><br>
+                </ul>
+         </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 2 Apartado 4">Working With Operators</h2>
+        <p><ul>
+            <li>When working with variables we invariably work with <i>operators</i> as well</li>
+            <li>Operators are used to perform some task and come in various forms</li><br>
+                <ul>
+                    <li>Arithmetic operators are used to perform arithmetic</li><br>
+                    <ul>
+                        <li>+-*/</li><br>
+                        <ul>
+                            <li>Add, subtract multiply and divide</li>
+                        </ul><br>
+                        <li>% - called the modulus and used to get a remainder</li><br>
+                        <ul>
+                            <li>22%4 - would result in the answer 2</li>
+                        </ul><br>
+                        <li>Increment numbers</li><br>
+                        <ul>
+                            <li>++</li>
+                        </ul><br>
+                        <li>decrement numbers</li><br>
+                        <ul>
+                            <li>--</li>
+                        </ul><br>
+                    </ul>
+                    <li>Assignment operators include more than just the =</li><br>
+                    <ul>
+                        <li>+=</li>
+                        <li>-=</li>
+                        <li>*=</li>
+                        <li>/=</li>
+                    </ul><br>
+                    <p style="
+                    Width:300px;
+                    height: auto;
+                    Margin: 0.2em 0em;
+                    Padding: 0.5em;
+                    text-align: left;
+                    position: relative;
+                    float:right;
+                    margin-top: -70px;
+                    margin-right: 400px;">
+                    <span style="font-size: 1em; font-weight: bold; list-style: square"><span style="color:darkred;">var </span>x = <span style="color:darkblue;">10</span>;</span><br>
+                    <span style="font-size: 1em; font-weight: bold; list-style: none">x += <span style="color:darkblue;">5</span>;</span><br></p>
+                </ul>
+            <li>The + operator when dealing with strings preforms a porcess called <i>concatenation</i>which simply combines multiple values</li><br>
+            <ul style="line-height: 0.7em; font-weight: bolder; width:80%; padding: 1.5em 3em; background-color:azure; list-style: none;">
+                <li><span style="color:cornflowerblue">var</span> playerName = <span style="color: darkorange">"Patrick"</span>;</li><br>
+                <li><span style="color:cornflowerblue">var</span> playerScore = <span style="color: darkolivegreen">50</span>;</li><br>
+                <li><span style="color:cornflowerblue">var</span> playerRank = <span style="color: darkolivegreen">1</span>;</li><br>
+                <li style="line-height: 0.7em"><span style="color:cornflowerblue">var</span> msg = <span style="color: darkorange">"Great Job"</span> + playerName + <span style="color: darkorange">"!"</span>+ </li><br>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: darkorange">" "</span> + <span style="color: darkorange">"Your score is "</span> + playerScore + </li><br>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: darkorange">" and your rank is "</span> + playerRank;</li>
+            </ul><br>
+            <li>Other operators are used to compare the values of variables and are used with conditional expressions</li><br>
+            <ul>
+                <li>Equality operators</li>
+                <ul><br>
+                    <li>== (equals)</li>
+                    <li>=== (strictly equals)</li>
+                    <li>!= (not equal)</li>
+                    <li>!== (not equal value or not equal type)</li>
+                </ul><br>
+            </ul>
+            <li>Remember that equals is ALWAYS a command not a request (=)</li><br>
+            <ul style="line-height: 0.7em; font-weight: bolder; width:80%; padding: 1.5em 3em; background-color:azure; list-style: none;">
+                <li><span style="color:cornflowerblue">var</span> a = <span style="color: darkolivegreen">5</span>;</li><br>
+                <li><span style="color:cornflowerblue">var</span> b = <span style="color: darkolivegreen">10</span>;</li><br>
+                <li><span style="color:cornflowerblue">if</span> (a = b) {</li><br>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(<span style="color: darkorange">"The values are equal"</span>)</li><br>
+                <li>}</li>
+            </ul><br>
+            <li>Conditional operators are used to compare values and are primarily sueed in loops within JavaScript which only take an action based on a certain condition</li><br>
+            <ul>
+                <li>&lt;</li>
+                <li>&lt;=</li>
+                <li>&gt;</li>
+                <li>&gt;=</li>
+                <ul style="
+                        Width:300px;
+                        height: auto;
+                        Margin: 0.2em 0em;
+                        Padding: 0.5em;
+                        text-align: left;
+                        position: relative;
+                        float:right;
+                        margin-top: -70px;
+                        margin-right: 400px;
+                        line-height: 0.7em;
+                        font-weight: bolder;
+                        padding: 1.5em 3em;
+                        background-color:azure;
+                        list-style: none;">
+                    <li><span style="color:cornflowerblue">var</span> a = <span style="color: darkolivegreen">5</span>;</li><br>
+                    <li><span style="color:cornflowerblue">var</span> b = <span style="color: darkolivegreen">10</span>;</li><br>
+                    <li><span style="color:cornflowerblue">if</span> (a &lt;= b) {</li><br>
+                    <li style="color: darkgray"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Do something</li><br>
+                    <li>} <span style="color:cornflowerblue">else</span> {</li><br>
+                    <li style="color: darkgray"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//Do something different</li><br>
+                    <li>}</li>
+                </ul><br>
+            </ul><br><br><br><br><br><br><br>
+            <li>Another way that you can cut down code from multiple if statements is to use a <i>ternary</i> operator</li>
+            <li>Uses the syntax <span style="color:dodgerblue">(condition) ?True:False</span></li><br>
+            <ul style="
+                        Width:400px;
+                        height: auto;
+                        Margin: 0.2em 0em;
+                        Padding: 0.5em;
+                        text-align: left;
+                        position: relative;
+                        float:right;
+                        margin-top: -20px;
+                        margin-right: 100px;
+                        line-height: 0.7em;
+                        font-weight: bolder;
+                        padding: 1.5em 3em;
+                        background-color:azure;
+                        list-style: none;">
+                    <li><span style="color:cornflowerblue">var</span> playerOne = <span style="color: darkolivegreen">500</span>;</li><br>
+                    <li><span style="color:cornflowerblue">var</span> playerTwo = <span style="color: darkolivegreen">600</span>;</li><br>
+                    <li><span style="color:cornflowerblue">if</span> (playerOne &gt; playerTwo) {</li><br>
+                    <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:cornflowerblue">var</span> highScore = playerOne</li><br>
+                    <li>} <span style="color:cornflowerblue">else</span> {</li><br>
+                    <li> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:cornflowerblue">var</span> highScore = playerTwo</li><br>
+                    <li>}</li>
+                </ul><br><br><br><br><br><br><br><br>
+                <p style="
+                        Width:600px;
+                        height: auto;
+                        Margin: 0.2em 0.2em;
+                        Padding: 0.2em;
+                        text-align: left;
+                        position: relative;
+                        float:right;
+                        margin-top: 10px;
+                        margin-right: 200px;
+                        line-height: 0.7em;
+                        font-weight: bolder;
+                        padding: 1.5em 3em;
+                        background-color:azure;
+                        list-style: none;">
+                <span style="color:cornflowerblue">var</span> highScore = (playerOne &gt; playerTwo) ? playerOne : playerTwo;</p>
+            </ul></p><br><br><br><br><br><br><br>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 2 Apartado 5">Working With Loops</h2>
+        <p><ul>
+            <li>Very quickly when working with programming you realize that there is a code that you want to be repeated</li>
+            <li>Its more efficient to tell the browser to repeat something by typing it once than to have to retype countless times</li>
+            <li>Looping isn't the difficult part</li><br>
+                <ul>
+                    <li>For every link in the page {//do this code}</li>
+                    <li>For evety field in a form on the page {//do this code}</li>
+                    <li>200 times {//do this code}</li><br>
+                </ul>
+            <li>Instead the difficult is when to stop, whi's keeping track?</li><br>
+            <li>One very common loop is very similar to an <i>if</i> statement</li><br>
+            <ul style="line-height: 0.7em; font-weight: bolder; width:80%; padding: 1.5em 3em; background-color:azure; list-style: none;">
+                    <li><span style="color:cornflowerblue">var</span> a = <span style="color: darkolivegreen">1</span>;</li><br>
+                    <li><span style="color:cornflowerblue">if</span> (a &lt; <span style="color: darkolivegreen">10</span>) {</li><br>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(a)</span>)</li><br>
+                    <li>}</li>
+            </ul><br>
+            <li>Just replace the keyword <i>if</i> with <i>while</i> and it will loop while a condition evaluates to true, once it evaluates to false the loop es finished</li><br>
+            <ul style="line-height: 0.7em; font-weight: bolder; width:80%; padding: 1.5em 3em; background-color:azure; list-style: none;">
+                    <li><span style="color:cornflowerblue">var</span> a = <span style="color: darkolivegreen">1</span>;</li><br>
+                    <li><span style="color:cornflowerblue">while</span> (a &lt; <span style="color: darkolivegreen">10</span>) {</li><br>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(a)</span>)</li><br>
+                    <li>}</li>
+            </ul><br>
+            <li>Another difference with a loop is that we must have a tracking mechanism to ensure the loop ends when it should and doesn't run infinitely</li><br>
+            <ul>
+                <li>This is generally achieved by incrementing the variable</li><br>
+                <ul style="line-height: 0.7em; font-weight: bolder; width:80%; padding: 1.5em 3em; background-color:azure; list-style: none;">
+                    <li><span style="color:cornflowerblue">var</span> a = <span style="color: darkolivegreen">1</span>;</li><br>
+                    <li><span style="color:cornflowerblue">while</span> (a &lt; <span style="color: darkolivegreen">10</span>) {</li><br>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log(a)</span>)</li><br>
+                    <li>a++;</li><br>
+                    <li>}</li>
+                </ul>
+            </ul><br>
+            <li>The Do/While loop is a variant of the while loop with one major difference</li><br>
+            <ul>
+                <li>It will always execute the code block once</li>
+                <li>The first check to determine whether the condition is true or not comes after this initial execution</li><br>
+                <ul style="line-height: 0.7em; font-weight: bolder; width:80%; padding: 1.5em 3em; background-color:azure; list-style: none;">
+                    <li><span style="color:cornflowerblue">var</span> text = <span style="color: darkorange">""</span>;</li><br>
+                    <li><span style="color:cornflowerblue">do</span> {</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text += <span style="color: darkorange">"&lt;br&gt;The number is "</span>+ i;</li><br>
+                    <li>i++;</li><br>
+                    <li>}</li><br>
+                    <li><span style="color:cornflowerblue">while</span> (i &lt; <span style="color: darkolivegreen">10</span>)</li>
+                </ul>
+            </ul><br>
+            <li>The For loop is probably the most common type of loop to implement in large part because of the limited amount of code required for the loop</li><br>
+            <ul>
+                <ul style="line-height: 0.7em; font-weight: bolder; width:80%; padding: 1.5em 3em; background-color:azure; list-style: none;">
+                    <li><span style="color:darkred">for</span> (i = <span style="color: darkblue">0</span>; i &lt; <span style="color: darkblue">5</span>; i++) {</li><br>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text += <span style="color: darkblue">"The number is "</span>+ i + <span style="color: darkblue">"&lt;br&gt;;</li><br>
+                    <li>}</li>
+                </ul><br>
+            </ul>
+            <li>Regardless of the type or loop there are common parts</li><br>
+            <ul>
+                <li>Set up the index</li>
+                <li>Check the condition</li>
+                <li>Increment the condition</li><br>
+            </ul>
+            <li>The for loop does this the most efficiently as it is all completed in a single line</li><br>
+            <li>Normally a loop will continue until the condition of the loop no longer evaluates to True but there are two exceptions using JavaScript keywords</li><br>
+            <ul>
+                <li>Break</li><br>
+                <ul>
+                    <li>A special word that jumps us out of the loop for good</li>
+                    <li>Not used as often with For and While loops but you might encounter it</li><br>
+                </ul>
+                <li>Continue</li><br>
+                <ul>
+                    <li>A special word that jumps back to the top of the loop</li>
+                    <li>So it stops that particular iteration but not the loop as a whole</li><br>
+                </ul>
+            </ul>
+      </ul></p><br>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 2 Apartado 6">Creating Functions</h2>
+        <p><ul>
+            <li>There are times in JavaScript as in other programming languages that you would like to bundle a set of code so that it is reusable and functions provide this capability</li>
+            <li>Creating functions has many advantages</li><br>
+            <ul>
+                <li>Refer to reusable code using a user friendly name</li>
+                <li>Easily accept and process input parameters</li>
+                <li>Quickly add funcionality to your website through the use of libraries</li><br>
+            </ul>
+            <li>A function is simply a block of code designed to perform a particular task</li><br>
+            <ul>
+                <li>A function is declared</li>
+                <li>Something on the page "calls" the function</li><br>
+            </ul>
+            <li>Two basic types of functions exist</li><br>
+            <ul>
+                <li>Anonymous functions</li>
+                <li>Named functions</li><br>
+            </ul>
+            <li>Both of these are created using the JavaScript keyword <span style="color:blue";>function</span></li><br>
+            <ul style="line-height: 0.7em; font-weight: bolder; width:80%; padding: 1.5em 3em; background-color:azure; list-style: none;">
+                <li><span style="color:firebrick">function</span> myFunction(p1,p2) {</li><br>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:firebrick">return </span>p1 * p2;</li><br>
+                <li>}</li>
+            </ul><br>
+            <li>Function syntax</li><br>
+            <ul>
+                <li>Defined by the keyword <i>function</i> followed by a name and () or just ()</li><br>
+                <ul>
+                    <li>Names can consist of:</li><br>
+                    <ul>
+                        <li>Letters</li>
+                        <li>Numbers</li>
+                        <li>Underscores</li>
+                        <li>&#36; signs</li><br>
+                    </ul>
+                </ul>
+                <li>Parameters</li><br>
+                <ul>
+                    <li>Names listed in the function definition between the ()</li><br>
+                </ul>
+                <li>Arguments</li><br>
+                <ul>
+                    <li>Real values recived by the function definition when it is invoked</li>
+                    <li>Behave as local variables inside the function</li><br>
+                </ul><br>
+            </ul>
+            <li>The code inside a function will execute when something invokes (calls) the function</li><br>
+            <ul>
+                <li>An event occurs - a user clicks a button</li>
+                <li>It is invoked or called within JavaScript code</li>
+                <li>Automatically (self-invoked</li><br>
+            </ul>
+            <li>The return keyword defines the value that is "returned" back to the caller causing the function to stop</li><br>
+            <ul>
+            <li style="list-style: none; font-weight: bold"><span style="color:firebrick">var</span> x = myFunction(<span style="color:darkblue;">4</span>, <span style="color:darkblue;">3</span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:seagreen;">// Function is called, return value will end up in x</span></li><br>
+            </ul><br>    
+            <ul style="list-style: none; font-weight: bold">
+                <li><span style="color:firebrick">function</span> myFunction(a, b) {</li><br>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:firebrick">return </span>a * b;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:seagreen;">// Function returns the product of a and b</span></li><br>
+                <li>}</li>
+            </ul><br>
+            <li>Best practice is to define the funciton in the code before the function is called</li><br>
+            <ul>
+                <li>Functions should ve defined early in the JavaScript file</li>
+                <li>Functions are then called later in the file</li>
+            </ul><br>
+            <li>Functions can be defined globally or nested within other functions</li><br>
+            <ul>
+                <li><span style="color:darkblue;">function</span> square<span style="color:darkblue;">(</span>x<span style="color:darkblue;">) {</span></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:darkblue;">return</span> x <span style="color:darkblue;">*</span> x;</li>
+                <li><span style="color:darkblue;">}</span></li>
+            </ul><br>
+            <ul>
+                <li><span style="color:darkblue;">function</span> length<span style="color:darkblue;">(</span>x<span style="color:darkblue;">,</span>y<span style="color:darkblue;">) {</span></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:darkblue;">function</span> square<span style="color:darkblue;">(</span>x<span style="color:darkblue;">) {</span></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:darkblue;">return</span> x <span style="color:darkblue;">*</span> x;</li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:darkblue;">}</span></li>
+                <li><span style="color:darkblue;">}</span></li>
+            </ul><br>
+      </ul></p><br>           
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 2 Apartado 7">Understanding Types And Objects</h2>
+        <p><ul>
+            <li>Most programming languages require you to declare variables using a particular type which tells the programming engine what data type to expect</li>
+            <li>JavaScript is different in that it is a "loosely typed" language and doesn't really care the type of object its dealing with in most cases</li>
+            <li>The genereal types that you will work with are:</li><br>
+            <ul>
+                <li>Numbers</li>
+                <li>Strings</li>
+                <li>Dates</li>
+                <li>Objects</li><br>
+            </ul>
+            <li>Numbers in JavaScript do not have the intricacies that are present in other languages such as decimal, integer, large integer, floating point, etc...</li>
+            <li>All numbers in JavaScript are assumed to be floating point integers which could cause a problem but since massive numeric calculations aren't usually performed in client-side code its not an issue</li><br>
+            <ul>
+                <li style="font-weight: bold;"><span style="color:darkblue;">var</span> a <span style="color:darkblue;">=</span> <span style="color:darkorange;">1</span><span style="color:darkblue;">;</span></li><br>
+                <li style="font-weight: bold;"><span style="color:darkblue;">var</span> b <span style="color:darkblue;">=</span> <span style="color:darkorange;">12.2</span><span style="color:darkblue;">;</span></li><br>
+                <li style="font-weight: bold;"><span style="color:darkblue;">var</span> c <span style="color:darkblue;">=</span> <span style="color:darkorange;">12.324</span><span style="color:darkblue;">;</span></li><br>
+            </ul>
+            <li>If you surround numbers in quotes they will no longer be treated like a number but instead will bi assumed to be a string</li><br>
+            <ul>
+                <li style="font-weight: bold;"><span style="color:darkblue;">var</span> number <span style="color:darkblue;">=</span> <span style="color:darkorange;">5</span><span style="color:darkblue;">;</span></li><br>
+                <li style="font-weight: bold;"><span style="color:darkblue;">var</span> string <span style="color:darkblue;">=</span> <span style="color:gray;">"5"</span><span style="color:darkblue;">;</span></li><br>
+            </ul>
+            <li>This could possibly cause an error in your code and so you can declare a value to be a number using the syntax</li><br>
+            <ul>
+                <li style="font-weight: bold;"><span style="color:darkblue;">var</span> foo <span style="color:darkblue;">=</span> <span style="color:gray;">"55"</span><span style="color:darkblue;">;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:seagreen;">//could be "abc"</span></li><br>
+                <li style="font-weight: bold;"><span style="color:darkblue;">var</span> myNumber <span style="color:darkblue;">=</span> number<span style="color:darkblue;">(</span>foo<span style="color:darkblue;">);</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:seagreen;">//make it a number</span></li><br>
+            </ul>
+            <li>In addition to explicitly typing a variable you can use the built in JavaScript function NaN (Is Not a Number) in order to test the value of a variable</li><br>
+            <ul>
+                <li style="font-weight: bold;"><span style="color:darkblue;">if</span> (<span style="color:plum;">isNan</span><span style="color:darkblue;">(</span>myNumber<span style="color:darkblue;">) ) {</span></li>
+                <li style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log<span style="color:darkblue;">(</span><span style="color:gray;">"It's not a number"</span><span style="color:darkblue;">);</span></li>
+                <li style="font-weight: bold;"><span style="color:darkblue;">}</span> </li><br>
+            </ul>
+            <li>You can write an else statement if you actually want to check and verify that something IS a number</li><br>
+            <li>The Math object in JavaScript can perform some very useful operations for developers using JavaScript</li><br>
+            <ul>
+                <li style="font-weight: bold;"><span style="color:darkblue;">var</span> x = 200.6;</li><br>
+                <li style="font-weight: bold"><span style="color:darkblue;">var</span> y = <span style="color:darkblue;">Math.round</span>(x); <span style="color:gray;">// 201</span></li><br><br>
+                <li style="font-weight: bold;"><span style="color:darkblue;">var</span> a = 200, b = 10000, c = 4;</li><br>
+                <li style="font-weight: bold"><span style="color:darkblue;">var</span> biggest = <span style="color:darkblue;">Math.max</span>(a,b,c);</li><br>
+                <li style="font-weight: bold"><span style="color:darkblue;">var</span> smallest = <span style="color:darkblue;">Math.min</span>(a,b,c);</li><br>
+            </ul>
+            <li>Number properties</li><br>
+            <ul>
+                <li>MAX_VALUE</li>
+                <li>MIN_VALUE</li>
+                <li>NaN</li>
+            </ul><br>
+            <li>Number methods</li><br>
+            <ul>
+                <li>toString()</li>
+                <li>toExponential()</li>
+                <li>toFixed()</li>
+            </ul><br>
+            <li>Strings are used for storing and manipulating text and the text can be inside single quotes or double quotes but not both</li><br>
+            <ul>
+                <li>Can't start with single quotes and end with double quotes</li>
+                <li>Can't use the same quotes more than once inside a string</li>
+                <li>Can use quotes inside a string as long as they are not the same as the outside quotes</li><br>
+                <ul>
+                    <li style="font-weight: bold;"><span style="color:darkred;">var</span> answer = <span style="color:darkblue;">"It's alright"</span>;</li>
+                    <li style="font-weight: bold;"><span style="color:darkred;">var</span> answer = <span style="color:darkblue;">"He is called 'Johnny'"</span>;</li>
+                    <li style="font-weight: bold;"><span style="color:darkred;">var</span> answer = <span style="color:darkblue;">'He is called "Johnny"'</span>;</li><br>
+                </ul>
+            </ul>
+            <li>When you have a situation where you need to include special characters  (like quotes) inside of a string value you have two options</li><br>
+            <ul>
+                <li>Change the quotes i.e. single quotes inside of double quotes</li>
+                <li>Escape the special characters using the \ character</li><br>
+                <ul>
+                    <li style="font-weight: bold;"><span style="color:darkred;">var</span> answer = <span style="color:darkblue;">"We are the so-called "</span>Vikings" from the north."</li><br><br>
+                    <li style="font-weight: bold;"><span style="color:darkred;">var</span> answer = <span style="color:darkblue;">'It\'s alright';</span></li>
+                    <li style="font-weight: bold;"><span style="color:darkred;">var</span> answer = <span style="color:darkblue;">"We are the so-called \"Vikings\" from the north."</span></li><br>
+                </ul>
+            </ul>
+            <li>String Properties</li><br>
+            <ul>
+                <li>Length - the primary property that you will use which simply returns the length of the string</li><br>
+            </ul>
+            <li>String Methods</li><br>
+            <ul>
+                <li>charAt()</li>
+                <li>Match()</li>
+                <li>Replace()</li>
+                <li>Search()</li>
+                <li>Slice()</li>
+                <li>toLowerCase()</li>
+                <li>Trim()</li>
+                <li>toUpperCase</li>
+            </ul><br>
+            <li>The date object allows you to work with dates</li><br>
+            <ul>
+                <li>Years</li>
+                <li>Months</li>
+                <li>Days</li>
+                <li>Hours</li>
+                <li>Minutes</li>
+                <li>Seconds</li>
+                <li>Milliseconds</li><br>
+            </ul>
+            <li>Can be written as a string "Tue Dec 15 15:32:52 GMT-0500 (EST)</li><br>
+            <li>Can be written as a number 1450211572636 <span style="color:seagreen;">&nbsp;&nbsp;&nbsp;//Milliseconds since January 1 of 1970</span></li><br>
+            <li>Initiating a date can happen different ways</li><br>
+            <ul>
+                <li><span style="color:darkred;">new</span> Date()</li>
+                <li><span style="color:darkred;">new</span> Date(milliseconds)</li>
+                <li><span style="color:darkred;">new</span> Date(dateString)</li>
+                <li><span style="color:darkred;">new</span> Date(year, month, day, hours, minutes, seconds, milliseconds)</li>
+            </ul><br>
+            <li>By default creates a new date object with the current date and time but using other mechanisms you can choose a specified date and time</li><br>
+            <li>Once the date object is created there are various methods that allow you to operate on it</li><br>
+            <ul>
+                <li>Get and set the year, month, day, hour, etc.</li>
+                <li>Display the date in different formats</li><br>
+            </ul>
+            <li>Methods include</li><br>
+            <ul>
+                <li>getDate() - get the day as a number</li>
+                <li>getDay() - get the weekday as a number\</li>
+                <li>getFullYear() - get the four digit year</li>
+                <li>getHours - get the hour</li>
+                <li>getMinutes() - get the minutes</li><br>
+            </ul>
+            <li>Objects in JavaScript are everywhere, if you understand objects then you understand JavaScript</li><br>
+            <li>Objects have properties (attributes) and methods (actions)</li><br>
+            <li>Consider a real life object like a pizza</li><br>
+            <ul>
+                <li>All pizza objects have porperties</li><br>
+                <ul>
+                    <li>Toppings</li>
+                    <li>Crust</li>
+                    <li>Size</li>
+                    <li>Etc.</li>
+                </ul><br>
+                <li>They have metohds associated with them as well</li><br>
+                <ul>
+                    <li>Freeze</li>
+                    <li>Cook</li>
+                    <li>Prepare</li><br>
+                </ul>
+            </ul>
+            <li>Objects in JavaScipt are the same in that they will all contain the same properties and methods but with differing values</li><br>
+            <li>Consider an object called Person</li><br>
+            <ul>
+                <li>Properties</li><br>
+                <ul>
+                    <li>firstName</li>
+                    <li>lastName</li>
+                    <li>fullName</li>
+                    <li>DOB</li><br>
+                </ul>
+                <li>Methods</li><br>
+                <ul>
+                    <li>Function definitions</li><br>
+                </ul>
+            </ul>
+            <li>Nearly everything in JavaScript is an object</li><br>
+            <ul>
+                <li>Booleans can be objects</li>
+                <li>Numbers can be objects</li>
+                <li>Strings can be objects</li>
+                <li>Dates are always objects</li>
+                <li>Maths are always objects</li>
+                <li>Regular expessions are always objects</li>
+                <li>Arrays are always objects</li>
+                <li>Functions are always objects</li>
+                <li>Objects are objects</li>
+            </ul><br>
+            <li>Basically everything except for primitive values are objects but even those can be created as objects</li><br>
+            <li>Objects are simply variables containing variables</li><br>
+            <ul>
+                <li>Variables can only contain a single value</li>
+                <li>Objects can contain multiple values in name:value pairs</li><br>
+                <ul>
+                    <li><span style="color:darkred;">var</span> person = {firstName:<span style="color:darkblue;">"John"</span>, lastName:<span style="color:darkblue;">"Doe"</span>, age:<span style="color:darkblue;">50</span>, eyeColor:<span style="color:darkblue;">"blue"</span>};</li><br>
+                </ul>
+                <li>The name:value pairs are referred to as properties</li>
+                <li>Methods are actions that can be performed on objects</li><br>
+                <ul>
+                    <li>An objects property that contains a function definition</li>
+                </ul><br>
+            </ul>
+            <li>You can create JavaScript objects in various ways</li><br>
+            <ul>
+                <li>Define and create a single object using an object literal</li>
+                <ul>
+                    <li>Is the easiest way to create a JavaScript object</li><br>
+                    <ul>
+                        <li>You both define and create the object in a single statement</li>
+                        <li>Uses a list of name:value pairs inside {}</li><br>
+                        <ul>
+                            <li><span style="color:darkred;">var</span> person = {firstName:<span style="color:darkblue;">"John"</span>, lastName:<span style="color:darkblue;">"Doe"</span>, age:<span style="color:darkblue;">50</span>, eyeColor:<span style="color:darkblue;">"blue"</span>};</li><br>
+                        </ul>
+                        <ul>
+                            <li><span style="color:darkred;">var</span> person = {</li>
+                            <li>firstName:<span style="color:darkblue;">"John"</span>,</li>
+                            <li>lastName:<span style="color:darkblue;">"Doe"</span>,</li>
+                            <li>age:<span style="color:darkblue;">50</span>,</li>
+                            <li>eyeColor:<span style="color:darkblue;">"blue"</span></li>
+                            <li>};</li><br>
+                        </ul>
+                    </ul>
+                </ul>
+                <li>Define and create a single object using the keyword <i>new</i></li><br>
+                <ul>
+                    <li>Is to use the NEW keyword to create an object though this is deemed unnecessary</li><br>
+                    <ul>
+                            <li><span style="color:darkred;">var</span> person = <span style="color:darkred;">new</span> Object();</li>
+                            <li>person.firstName:<span style="color:darkblue;">"John"</span>;</li>
+                            <li>person.lastName:<span style="color:darkblue;">"Doe"</span>;</li>
+                            <li>person.age:<span style="color:darkblue;">50</span>;</li>
+                            <li>person.eyeColor:<span style="color:darkblue;">"blue"</span>;</li><br>
+                        </ul>
+                </ul>
+                <li>Define an object constructor and then create objects of the constructed type</li><br>
+                <ul>
+                    <li>The previous methods for creating objects are limited to creating a single object</li>
+                    <li>There are times when you would like to create an object "type" that can then be reused to create multiple objects of a single type</li>
+                    <li>The way to achive this is creating objects by using an object constructor function</li><br>
+                    <ul>
+                        <li><span style="color:darkred;">function</span>person(first, last, age, eye) {</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;this.fistName = first;</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;this.lastName = last;</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;this.age = age;</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;this.eyeColor = eye;</li>
+                        <li>}</li>
+                        <li><span style="color:darkred;">var</span> myFather = <span style="color:darkred;">new</span> person(<span style="color:darkblue;">"John", "Doe", 50, "blue"</span>);</li>
+                        <li><span style="color:darkred;">var</span> myMother = <span style="color:darkred;">new</span> person(<span style="color:darkblue;">"Sally", "Rally", 48, "green"</span>);</li><br>
+                    </ul>
+                </ul>
+            </ul>
+            <li>The properties are the most important parts of an object</li><br>
+            <ul>
+                <li>They are the values associated with an object</li>
+                <li>A collection of unordered properties</li>
+                <li>Can usually be added, changed, and deleted though some are read-only</li>
+            </ul><br>
+            <li>Syntax</li>
+            <ul>
+                <li>objectName.property - person.firstName</li><br>
+                <ul>
+                    <li>person.firstname + <span style="color:darkblue;">" is "</span> + person.age + <span style="color:darkblue;">" years old. "</span>;</li><br>
+                </ul>
+                <li>objectName["property"] - person["firstName"]</li><br>
+                <ul>
+                    <li>person[<span style="color:darkblue;">"firstname"</span>] + <span style="color:darkblue;">" is "</span> + person[<span style="color:darkblue;">"age"</span>] + <span style="color:darkblue;">" years old. "</span>;</li><br>
+                </ul>
+            </ul>
+            <li>Object methods are actions that can be performed on objects</li><br>
+            <li>You create object methods using this syntax</li>
+            <ul>
+                <li><i>MethodName:funciton()</i>{executable code}</li><br>
+            </ul>
+            <li>You then access the method using this syntax</li>
+            <ul>
+                <li><i>objectName.methodName()</i></li><br>
+            </ul>
+            <li>Every JavaScript object has a prototype and the prototype is also an object</li><br>
+            <ul>
+                <li>New objects inherit their properties and methods from their prototype</li>
+                <li>Objects created using an object literal or with <span style="color:darkblue;">new Object()</span> inherit from the Object.prototype</li>
+                <li>Objects created from a particular object like <span style="color:darkblue;">new Date()</span> would inherit from the Date prototype</li><br>
+            </ul>
+            <li>You can create object prototypes to then use in creating additional objects and you do so using an object constructor function</li><br>
+            <li>You can add properties or methods</li><br>
+            <ul>
+                <li>To existing objects</li>
+                <li>To all existing objects of a specific type</li>
+                <li>To na object prototype</li><br>
+            </ul>
+        <li>Adding to objects only changes the object in question bur adding to the prototype will modify new objects created using that prototype</li>
+        </ul></p><br>           
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+<h1>MODULE 3: GETTING A HANDLE ON THE DOM</h1>
+    <div>
+        <h2 id="Modulo 3 Apartado 1">Introduction To The HTML Document Object Model (DOM)</h2>
+        <p><ul>
+            <li>The JavaScript code that we write does not operate in a vacuum bur instead it is attached to HTML web pages</li><br>
+            <li>The web page is the script upon which we are working so we must be able to reach into the page to get information and have the page respond back to our code</li><br>
+            <li>Understanding the DOM is the way to do that, it is an incredibly important part of understanding the functionality of JavaScript</li><br>
+            <li>What exactly is the DOM?</li><br>
+            <ul>
+                <li>It's not a language</li>
+                <li>It's not a part of JavaScript</li>
+                <li>It's a fairly vague term</li>
+            </ul><br>
+            <li>The web definition is "The Document Object Model is an application programming interface that defines logical structure of well-formed an XML and HTML documents"</li><br>
+            <ul>
+                <li>Not overly helpful</li><br>
+            </ul><br>
+            <li>Taking apart the statement DOM will help to understand</li>
+            <ul>
+                <li>Document - is the web page itself</li>
+                <li>Object - refers to the objects that are created based on the HTML structure</li>
+                <li>Model - a consistent way to approach the various objects</li><br>
+                <img src="pic_htmltree.gif" alt="example image" style="width:30em;height:15em;">
+            </ul><br>
+            <li>So the HTML DOM is a standard object model and programming interface for HTML which defines</li><br>
+            <ul>
+                <li>HTML elements as objects</li>
+                <li>The properties of all HTML elements</li>
+                <li>The methods to access all HTML elements</li>
+                <li>The events for all HTML elements</li>
+            </ul><br>
+            <li>The HTMLDOM is a standard for how to get, change, add or delete HTML elements</li><br>
+            <li>DOM methods are actions that you can perform on HTML elements</li><br>
+            <li>DOM porperties are values that you can set or change</li><br>
+            <ul>
+                <li>All HTML elements are defined as objects and accessible through JavaScript</li>
+                <li>A property is a value that you can retrieve or modify</li><br>
+                <ul>
+                    <li>Changing the content of an HTML element</li>
+                </ul><br>
+                <li>A method is an action that you can do</li><br>
+                <ul>
+                    <li>Adding an HTML element</li>
+                    <li>Deleting an HTML element</li>
+                </ul><br>
+            </ul>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div> 
+    <div>
+        <h2 id="Modulo 3 Apartado 2">Accessing DOM Elements</h2>
+        <p><ul>
+            <li>There are multiple ways of finding and accessing DOM elements which is the first step to dealing with the HTML DOM</li>
+            <li>If you want to manipulate the HTML elements you must first locate them</li>
+            <li>The key is understanding "where" in the DOM is the item that you wish to grab hold of as well as the critical question "Is it unique?"</li><br>
+            <li style="font-weight: bold"><span style="color:darkblue;">var</span> myElement <span style="color:darkblue;">=</span> <span style="color:darkorange;">document</span>.getElementById<span style="color:darkblue;">(</span><span style="color:darkgrey;">"abc"</span><span style="color:darkblue;">);</span></li><br>
+            <li>Options</li><br>
+            <ul>
+                <li>Find HTML elements by ID - document.getElementById</li>
+                <li>Find HTML elements by tag name - document.getElementByTagName</li>
+                <li>Find HTML elements by class - document.getElementByClassName</li>
+                <li>Find HTML elements by Css selectors - document.querySelectorAll</li>
+            </ul><br>
+            <li>Once you have the element you can access individual attributes using the getAttribute() method</li>
+            <li>This method will allow you to access the attributes for any element on the page</li><br>
+            <ul>
+                <li style="font-weight: bold">myElement.<span style="color:darkblue;">getAttribute("align");</span></li>
+            </ul><br>
+        </ul></p> 
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>   
+   <div>
+        <h2 id="Modulo 3 Apartado 3">Changing DOM Elements</h2>
+        <p><ul>
+            <li>Accessing DOM elements is the first step but often we would like to modify those elements either entirely or in part, such as attributes</li>
+            <li>One such way of changing elements is to modify the content which is performed using the innerHTML porperty</li>
+            <li>Another option is to modify attributes</li><br>
+            <li style="font-weight: bold">myElement.<span style="color:darkblue;">setAttribute("align"</span><span style="font-weight: bolder;"><u>name</u></span><span style="color:darkblue;">,"left"</span><span style="font-weight: bolder"><u>value</u></span><span style="color:darkblue;">);</span></li><br>
+            <li>Another way in which the HTML can be changed is to actually modify the style that is used using CSS properties</li><br>
+            <li>Any CSS styles can be modified on page load or based on events on the page</li><br>
+            <ul>
+                <li>The key is to use the CSS property names without the (-) character</li><br>
+                <ul>
+                    <li>Font-family becomes fontFamily</li>
+                    <li>Border-style becomes borderStyle</li>
+                    <li>Background-color becomes backgroundColor</li><br>
+                </ul>
+                <li>Using setAttribute("style","color:blue"); would also be supported and can use the (-)</li><br>
+                <ul>
+                    <li style="font-weight: bold;"><span style="color:darkblue;">&lt;</span><span style="color:firebrick;">script</span><span style="color:darkblue;">&gt;</span></li>
+                    <li style="font-weight: bold">document.getElementById("p2").style.color = "blue";</li>
+                    <li style="font-weight: bold;"><span style="color:darkblue;">&lt;</span><span style="color:firebrick;">script</span><span style="color:darkblue;">&gt;</span></li>
+                </ul><br>
+            </ul>
+        </ul></p> 
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>   
+   <div>
+        <h2 id="Modulo 3 Apartado 4">Creating DOM Elements</h2>
+        <p><ul>
+            <li>Although the innerHTML property can be used to add content to a page its not the cleanest method available with plenty of chance for error</li>
+            <li>Instead you can create elements within the DOM and once created add a text node to those elements</li>
+            <li>This results in a more precise and better way of modifying page content which always involves two steps</li><br>
+            <ul>
+                <li>Create the element</li><br>
+                <li>Add the element to the right place in the document</li><br>
+            </ul>
+            <li style="font-weight: bold;"><span style="color:darkblue;">var</span> newElement <span style="color:darkblue;">= </span><span style="color:darkgoldenrod;">document</span>.createElement<span style="color:darkblue;">(</span><span style="color:darkgray;">"li"</span><span style="color:darkblue;">);</span></li>
+            <li style="font-weight: bold">myElement.appendchild<span style="color:darkblue;">(</span>newElement<span style="color:darkblue;">);</span></li><br>
+            <li>The next step is either</li><br>
+            <ul>
+                <li>Access the innerHTML property of the element we just created to add content</li>
+                <li>Create a new text node and attach to the element (more precise)</li><br>
+            </ul>
+            <li style="font-weight: bold;"><span style="color:darkblue;">var</span> myText <span style="color:darkblue;">= </span><span style="color:darkgoldenrod;">document</span>.createTextNode<span style="color:darkblue;">(</span><span style="color:darkgray;">"new list item text"</span><span style="color:darkblue;">);</span></li>
+            <li style="font-weight: bold">newElement.appendchild<span style="color:darkblue;">(</span>myText<span style="color:darkblue;">);</span></li><br>
+        </ul></p> 
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>  
+   <div>
+        <h2 id="Modulo 3 Apartado 5">Responding to Events</h2>
+        <p><ul>
+            <li>Thus far our code has been loaded along with the web page which is really not very useful</li><br>
+            <li>JavaScript is supposed to control the behavior of the page and its interactivity with the user which means that our code should bu able to respond to actions that are taken on the page</li><br>
+            <li>This is where events and event listeners come into play</li><br>
+            <ul>
+                <li>You don't cause the events they are occurring all the time</li>
+                <li>You choose which of these events that you want to respond to</li>
+                <li>You write an event listener in order to handle those particular events and respond the way that you would like</li>
+            </ul><br>
+            <li>Three ways to react to events</li><br>
+            <ul>
+                <li>Write the JavaScript code directly into the HTML</li>
+                <li>Specify the element and event you want to handle and write a function</li>
+                <li>Use the addEventListener() function</li>
+            </ul><br>
+            <li><em style="font-weight: bold;">The first option</em> is a simple option and is often done but really not recommended</li><br>
+            <ul>
+                <li>It mixes the HTML code and the JavaScript</li>
+                <li>Its not very portable</li>
+                <li>Generally not a good idea</li><br>
+                <li style="font-weight: bold;"><span style="color:darkblue;">&lt;</span> <span style="color:darkgoldenrod;">button</span> onclick<span style="color:darkblue;">=</span><span style="color:darkgray;">'alert("Hello world");'</span><span style="color:darkblue;">)&gt;</span>Run some JavaScript<span style="color:darkblue;">&lt;/</span><span style="color:darkgoldenrod;">button</span><span style="color:darkblue;">)&gt;</span></li><br>
+            </ul><br>
+            <li><em style="font-weight: bold;">The 2nd option</em> is often the best and involves identifying the element that you want to act upon and the event that you would like to respond to</li><br>
+            <ul>
+                <li>The element is referenced by using a variable</li>
+                <li>The event is chosen from the list of possible events</li>
+                <li>An anonymous function is created that contains the code that you want to run</li><br>
+                <ul style="list-style: none;">
+                    <li style="font-weight: bold;">myElement.onclick <span style="color:darkblue;">= function() {</span></li>
+                    <li style="font-weight: bold;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:seagreen;">//your code goes here...</span></li>
+                    <li style="font-weight: bold;"><span style="color:darkblue;">};</span></li><br>
+                </ul>
+            </ul>
+            <li><em style="font-weight: bold;">The 3rd option</em> uses the addEventListener() method</li><br>
+            <li>Parameters</li><br>
+            <ul>
+                <li>The event you want to respond to minus the word on</li>
+                <li>The function that you want to call</li>
+                <li>True or False</li><br>
+                <li style="font-weight: bold;"><span style="color:darkgoldenrod;">document</span>.addEventListener<span style="color:darkblue;">(</span><span style="color:darkgray;">'click'</span><span style="color:darkblue;">,</span> myFunction<span style="color:darkblue;">, false);</span></li><br>
+            </ul>
+            <li>There are many events that you can respond</li><br>
+            <ul>
+                <li>Onclick</li>
+                <li>Onload</li>
+                <li>Onunload</li>
+                <li>Onchange</li>
+                <li>Onmouseover</li>
+                <li>Onmouseout</li>
+                <li>Onmouseup</li>
+                <li>Onmousedown</li>
+                <li>Onfocus</li>
+                <li>Onblur</li>
+            </ul><br>
+            <li>There are times when we would like behavior on a page automatically controlled based on time lapse</li><br>
+            <li>Though not technically events they are very similar on their function</li><br>
+            <li>To built in functions will this capability quite easily in JavaScript</li><br>
+            <ul>
+                <li>setTimeout()</li><br>
+                <ul>
+                    <li style="font-weight: bold;"><span style="color:darkgoldenrod;">setTimeout</span><span style="color:darkblue;">(</span>myFunction<span style="color:darkblue;">, </span><span style="color:darkorange;">5000</span><span style="color:darkblue;">)</span>&nbsp;&nbsp;&nbsp;<span style="color:seagreen;"> //setTimeout is in milliseconds</span></li><br>
+                </ul>
+                <li>setInterval()</li><br>
+                <ul>
+                    <li style="font-weight: bold;"><span style="color:darkgoldenrod;">setInterval</span><span style="color:darkblue;">(</span>changeImage<span style="color:darkblue;">, </span><span style="color:darkorange;">5000</span><span style="color:darkblue;">)</span>&nbsp;&nbsp;&nbsp;<span style="color:seagreen;">//also in milliseconds</span></li><br>
+                </ul>
+            </ul>
+        </ul></p> 
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+<h1>MODULE 4: WORKING WITH LIBRARIES</h1>
+   <div>
+        <h2 id="Modulo 4 Apartado 1">Introduction To Libraries</h2>
+        <p><ul>
+            <li>JavaScript libraries are collections of code that you can use in order to gain access to additional functionality or just to achieve results more quickly and easily</li><br>
+            <li>Libraries have been developed over time by advanced JavaScript programmers and the vast majority are available and considered open source</li><br>
+            <li>The use of libraries can really save a lot of time and effort</li><br>
+            <li>Several popular libraries exist and you don't have to make a single choice though jQuery is by far the most common</li><br>       
+            <ul>
+                <li>jQuery</li><br>
+                <ul>
+                    <li>Used by many of the largest companies in the world</li>
+                    <li>Uses CSS selectors to manipulate DOM objects on the page</li>
+                    <li>Provides a companion UI framework and numerous other plug-ins</li>
+                </ul><br>
+                <li>Prototype</li><br>
+                <ul>
+                    <li>Provides a simple API to perform common web tasks</li>
+                    <li>Enhances JavaScript by providing classes and inheritance</li>
+                </ul><br>
+                <li>Mootools</li><br>
+                <ul>
+                    <li>A framework offering an API to make common JavaScript programming easier</li>
+                    <li>Includes lightweight effects and some animations</li>
+                </ul><br>
+            </ul><br>
+            <li>In order to use these libraries you must add them to your page in the &lt;script&gt; tags either in the &lt;head&gt; or &lt;body&gt; section or the document</li><br>
+            <ul>
+                <li>Src attribute tells where to get the file</li>
+                <li>Added just like any other external script</li>
+                <li>Can be stored locally</li>
+                <li>Can be obtained using a Content Delivery Network (CDN)</li>
+            </ul><br>
+            <li>Content Delivery Networks</li><br>
+            <ul>
+                <li>If many organizations are using the same libraries it makes sense to place them in a common location that everyone can access</li>
+                <li>Helps to keep the size of pages small and the load times at a minimun</li>
+                <li>Essentially a network of servers that contain shared code libraries</li>
+                <li>Google provides a free CDN for a number of JavaScript libraries</li>
+            </ul><br>            
+        </ul></p> 
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div> 
+   <div>
+        <h2 id="Modulo 4 Apartado 2">Installing And Using jQuery</h2>
+        <p><ul>
+            <li>jQuery is just one of many libraries in use but it is the most popular library which helps assist developers</li><br>
+            <ul>
+                <li>A lightweight "write less do more" library designed to make it much easier to include JavaScript on your website</li><br>
+                <li>Takes many common tasks which require lines and lins of code and wraps them in methods you can call with a single line of code</li><br>
+                <li>Simplifies many complicated tasks in JavaScript</li><br>
+                <ul>
+                    <li>HTML/DOM manipulation</li>
+                    <li>CSS manipulation</li>
+                    <li>HTML event methods</li>
+                    <li>Effects and animations</li>
+                </ul><br>
+            </ul>       
+            <li>To begin using jQuery you either download it locally or use a CDN</li><br>
+            <ul>
+                <li>Local jQuery files are preferred on production websites for speed and reliability</li><br>
+                <ul>
+                    <li style="list-style:none;"><a href="https://jquery.com/download/" target="_blank"><span style="font-weight: bold; color:dodgerblue;">Click on here for download link</span></a></li><br>
+                </ul>
+                <li>CDN is perfect for development, testing and learning</li><br>       
+                <ul style="list-style:none;">
+                    <li>3.x snippet:</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"&gt;&lt;/script&gt;</li><br>
+                    <li>2.x snippet:</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"&gt;&lt;/script&gt;</li><br>
+                    <li>1.x snippet:</li>
+                    <li>&nbsp;&nbsp;&nbsp;&nbsp;&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;</li><br>
+                </ul>
+            </ul><br>       
+            <li>jQuery syntax</li><br>
+            <ul>
+                <li>The syntax is tailored for selecting HTML elements and then performing actions on those elements</li><br>
+                <ul style="list-style: none;">
+                    <li style="font-size:1.5em; font-weight:bold;">&#36;(selector).action()</li><br>
+                </ul><br>
+                <ul style="list-style: none;">
+                    <li style="font-size:1.5em; font-weight:bold;">&#36;<span style="color:darkblue;">(this)</span>.hide<span style="color:darkblue;">()</span></li>
+                    <li style="font-size:1.5em; font-weight:bold;">&#36;<span style="color:darkblue;">(</span><span style="color:darkgray;">"p"</span><span style="color:darkblue;">)</span>.hide<span style="color:darkblue;">()</span></li>
+                    <li style="font-size:1.5em; font-weight:bold;">&#36;<span style="color:darkblue;">(</span><span style="color:darkgray;">".text"</span><span style="color:darkblue;">)</span>.hide<span style="color:darkblue;">()</span></li>
+                    <li style="font-size:1.5em; font-weight:bold;">&#36;<span style="color:darkblue;">(</span><span style="color:darkgray;">"#text"</span><span style="color:darkblue;">)</span>.hide<span style="color:darkblue;">()</span></li>
+                </ul><br>
+                <li>A common problem when programming JavaScript has to do with scripts running before the page is loaded which sometimes prevents the scripts from gaining access to HTML elements on the page</li><br>
+                <li>jQuery has a function called ready() that is designed to take care of that in that it waits for the page to be ready (all HTML elements loaded)</li><br>
+                <li>Essentially you would just place the code inside the ready function</li><br>
+                <ul style="list-style: none;">
+                    <li style="font-size:1.5em; font-weight:bold;">&#36;<span style="color:darkblue;">(</span><span style="color:darkgoldenrod;">document</span><span style="color:darkblue;">)</span>.ready<span style="color:darkblue;">( function () {</span></li>
+                    <li style="font-size:1.5em; font-weight:bold;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:darkgoldenrod;">alert</span><span style="color:darkblue;">(</span><span style="color:darkgray;">"Hello World"</span><span style="color:darkblue;">);</span></li>
+                    <li style="font-size:1.5em; font-weight:bold;"><span style="color:darkblue;">});</span></li>
+                </ul><br>
+            </ul>
+        </ul></p> 
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+   <div>
+        <h2 id="Modulo 4 Apartado 3">Modifying Web Pages Using jQuery</h2>
+        <p><ul>
+            <li>jQuery contains powerful methods for changing and manipulating HTML content both in content and style</li><br>
+            <li>Various DOM related methods exist within jQuery making it easy to manipulate elements and attributes</li><br>
+            <li>Primary methods</li><br>
+            <ul>
+                <li>Text () - sets or returns the text content of the selected element</li>
+                <li>Html () - sets or returns the content of the selected element (including HTML markup)</li>
+                <li>Val () - sets or returns the value in form fields</li><br>
+            </ul><br>
+            <li>Additional methods are available to add and remove content from the web page</li><br>
+            <ul>
+                <li>Append ()</li>
+                <li>Prepend ()</li>
+                <li>After ()</li>
+                <li>Before ()</li>
+            </ul><br>
+        </ul></p> 
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+</body>
+<footer>
+	<p>Authored by Francisco Javier Cabello Gonzalez &copy; 2022</p>
+</footer>
+</html>

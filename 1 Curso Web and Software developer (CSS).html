@@ -1,0 +1,1451 @@
+<!doctype html>
+<html>
+<head>
+	<title>CSS Course</title>
+    <link rel=stylesheet type="text/css" href="../normalize.css">
+    <link rel=stylesheet type="text/css" href="../main.css">
+   	<style>
+         h1 {
+            font-family: "times new roman";
+            font-weight: bolder;
+		    background-color:grey;
+            text-align: center;
+            padding: 0.5em;
+            text-shadow: 0.1em 0.1em 0.5em white;
+        }
+		h2 {
+            font-family:arial; color: green;
+            font-size:130%;
+            font-weight: bolder;
+            Width: 20em;
+            height: auto;
+            Margin: 0.2em 0em;
+            Border: Outset;
+            Border-radius: 15px;
+            Padding: 0.5em;
+            text-align: center;
+            font-size: 1.2em;
+            background-color:floralwhite;
+            position: relative;
+            text-shadow: 0.1em 0.1em 0.2em lightgreen;
+        }
+        h3 {
+            font-family: "times new roman";
+            font-weight: bolder;
+		    Width: 25em;
+            height: auto;
+            Margin: 0.2em 0em;
+            Border: Groove;
+            Border-radius: 15px;
+            Padding: 0.5em;
+            text-align: center;
+            font-size: 1.2em;
+            background-color:burlywood;
+            position: relative;
+            text-shadow: 0.05em 0.05em 0.2em white;
+        }
+        body {
+            font-family: times new roman;
+            font-size: 0.8em;
+            background-color: antiquewhite;
+            text-align: left;
+        }
+        div,p {
+            font-family: "times new roman";
+            font-size: 1.2em;
+            text-align: left;
+        }
+        
+        .Boton {
+            Width:250px;
+            height: auto;
+            Margin: 0.2em 0em;
+            Border: Outset;
+            Border-radius: 15px;
+            Padding: 0.5em;
+            text-align: center;
+            font-size: 1.2em;
+            background-color: darkgoldenrod;
+            position: relative;
+        }
+        
+        table {
+            Width:500px;
+            height: auto;
+            Margin: 0.2em 0em;
+            Border: Solid;
+            Border-color: Black;
+            Border-radius: 15px;
+            Padding: 0.5em;
+            text-align: center;
+            font-size: 1.2em;
+            color:blanchedalmond;
+            background-color:darkolivegreen;
+            position: relative;
+            float:right;
+            margin-top: -270px;
+            margin-right: 100px;
+        }
+        
+        th {
+            Border: Solid;
+            Border-color: Black;
+            Border-radius: 5px;
+            text-align: center;
+            font-size: 1.2em;
+            color:darkolivegreen;
+            background-color:blanchedalmond;
+        }
+        
+        td {
+            Border: Solid;
+            Border-color: Black;
+            Border-radius: 10px;
+            text-align: center;
+            font-size: 1em;
+            color:darkolivegreen;
+            background-color:blanchedalmond;
+        }
+        
+        .transicion {
+            animation: animacion1 2s infinite;
+        }
+        
+        @keyframes animacion1{
+            from {
+                background-color:floralwhite;
+            }
+            to {
+                background-color:burlywood;
+            }
+        }
+                   
+        a {text-decoration: none}
+        a:link  {color: black; font-weight: bolder;}
+        a:visited  {color:black}
+        a:hover  {text-decoration: underline}
+        a:active  {background-color:chartreuse}
+    </style>
+</head>
+<body>
+	<h1 id="Principio">CSS Course</h1>
+	<p>What is CSS:</p>
+	<p>Means "Cascading Style Sheet" and is use to define the style (format and presentation) of a web page</p>
+    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Module 1: Introduction to CSS3</p><br>   
+    <a Class="Boton"; href="#Modulo 1 Apartado 1">Introduccion to CSS3</a>
+    <a Class="Boton"; Id="Boton 1"; href="#Modulo 1 Apartado 2">The advantages of Style Sheets</a>
+    <a Class="Boton"; href="#Modulo 1 Apartado 3">Discoveering Cascade Style Sheets</a>
+    <a Class="Boton"; href="#Modulo 1 Apartado 4">CSS Structure and Syntax</a><br><br><br>
+    <a Class="Boton"; href="#Modulo 1 Apartado 5">Using Different Kinds of Style Sheets</a><br><br>
+    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Module 2: Understanding The CSS Box Model</p><br>
+    <a Class="Boton"; href="#Modulo 2 Apartado 1">Understanding The CSS Box Model</a>
+    <a Class="Boton"; href="#Modulo 2 Apartado 2">What is The Box Model?</a>
+    <a Class="Boton"; href="#Modulo 2 Apartado 3">Height and Width</a>
+    <a Class="Boton"; href="#Modulo 2 Apartado 4">Margin and Padding</a>
+    <a Class="Boton"; href="#Modulo 2 Apartado 5">Working With Borders</a><br><br>
+    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Module 3: Working With Page Layouts</p><br>
+    <a Class="Boton"; href="#Modulo 3 Apartado 1">Positioning Elements</a>
+    <a Class="Boton"; href="#Modulo 3 Apartado 2">Floating Elements</a>
+    <a Class="Boton"; href="#Modulo 3 Apartado 3">Controling Display And Visibility</a><br><br>
+    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Module 4: Using Colors And Backgrounds</p><br>
+    <a Class="Boton"; href="#Modulo 4 Apartado 1">Working With Colors</a>
+    <a Class="Boton"; href="#Modulo 4 Apartado 2">Working With Backgrounds</a>
+    <br><br>
+    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Module 5: Web Typography</p><br>
+    <a Class="Boton"; href="#Modulo 5 Apartado 1">Understanding Fonts</a>
+    <a Class="Boton"; href="#Modulo 5 Apartado 2">Working With Text Properties</a>
+    <a Class="Boton"; href="#Modulo 5 Apartado 3">Text And Shadows Effects</a>
+    <br><br>
+    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Module 6: Links, Lists And Tables</p><br>
+    <a Class="Boton"; href="#Modulo 6 Apartado 1">Working With Lists</a>
+    <a Class="Boton"; href="#Modulo 6 Apartado 2">Using Navigation Bars</a>
+    <a Class="Boton"; href="#Modulo 6 Apartado 3">Working With Tables</a>
+    <br><br>
+    
+    <p style="color:darkblue; font-weight: bolder; font-size: 25px">Module 7: Dynamic CSS3 Properties</p><br>
+    <a Class="Boton"; href="#Modulo 7 Apartado 1">Using Transforms</a>
+    <a Class="Boton"; href="#Modulo 7 Apartado 2">Using Transitions</a>
+    <a Class="Boton"; href="#Modulo 7 Apartado 3">Using animations</a>
+    <a Class="Boton"; href="#Modulo 7 Apartado 4">CSS Project</a>
+    <br><br><br>
+    
+<h1>MODULE 1: INTRODUCTION TO CSS3</h1>
+    <div>
+        <h2 id="Modulo 1 Apartado 1">Introduction to CSS3</h2>
+        <p><ul>
+            <li><dt>The Advantages of Style Sheets</dt></li><br>
+                <dd>Cascading Style Sheets (CSS) is the language web page authors use to tell a browser or other agent how to format an HTML document.</dd><br>
+                    <ul>
+                       <li>HTML5 defines the structure and content</li>
+                        <li>CSS defines the formatting and presentation</li>
+                    </ul><br>
+                <dd>Style sheets provide precise control over how structural elements appear on a web page</dd><br>
+                <dd>A single style sheet can be used to provide styles for an entire page or multiple pages on a site</dd><br>
+            <li>CSS Struture and Syntax</li>
+            <li>Using Different Kinds of Style Sheets</li>
+        </ul></p><br>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 1 Apartado 2">The advantages of Style Sheets</h2>
+        <p><ul>
+            <li><dt>Types ot Styles</dt></li><br>
+                <dd>Inline style - adding markup to individual HTML elements</dd>
+                <dd>Internal Style sheets - sequential markup added to the &lt;style&gt; element in the HTML document</dd>
+                <dd>External Style sheets - linking HTML documents to a .css file that contains your styles</dd>
+                <dd>Style differently based on whether an HTML document is being viewed on a desktop or a mobile device</dd>
+          </ul>
+            <ul>
+            <li><dt>Older presentational HTML is a thing of the past</dt></li><br>
+                <dd>The &lt;table&gt; element can be used where appropiate but should not be used to simply arrange items in a grid as in the past.</dd>
+                <dd>The &lt;font&gt; element is no longer a part of the HTML specification</dd>
+                <dd>In HTML5 presentational elements have either been redefined or have been deprecated <em>(maeby browsers hasn't got support for them)</em> and their use should be avoided</dd>
+            </ul>
+            <ul>
+            <li><dt>What are the advantages to using style sheets?</dt></li><br>
+                <dd>More flexibulity</dd>
+                <dd>HTML5 no longer includes display-oriented or "presentational" elements and attributes meaning these may cease to be sopported by browsers in the near future</dd>
+                <dd>Style sheets control every aspect of page display
+                    <ul>
+                        <li>Space between lines</li>
+                        <li>Character spacing</li>
+                        <li>Page margins</li>
+                        <li>Positioning of elements</li>
+                    </ul></dd>
+                <dd>Apply changes globally</dd>
+                <dd>Instruct browsers to control appearance</dd>
+                <dd>Create dynamic pages using animations</dd>
+            </ul>
+         <ul>
+            <li><dt>Four Simple Steps to Styling</dt></li><br>
+                <dd>Select the elements in a document that you want to style (selectors)</dd>
+                <dd>Write declarations that apply to the selectors
+                    <ul>Property name and value
+                    <ul>
+                        <li>Font-family: Verdana</li>
+                        <li>Font-weight: Bold</li>
+                        <li>Padding: 10px</li>
+                    </ul></ul></dd>
+                <dd>Link the style rules and markup</dd>
+                <dd>The browser handles the rest</dd>
+            </ul>
+        </p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 1 Apartado 3">Discovering Cascade Style Sheets</h2>
+        <p><ul>
+            <li><dt>We understand "style sheets" but what's with the term cascading?</dt></li><br>
+                <dd>Cascading is the process browsers use to determine which style to apply to an element</dd><br>                   
+                <dd>What if there is a conflict and two style sheets apply a different style rule to the same element?<br>
+                    <ul>
+                        <li>The last applied style will be the winner</li>
+                        <li>All web browsers follow the same rules which developers need to know</li>
+                    </ul></dd></ul>
+            <ul><li>What CSS can do for a web page</li><br>
+                <ul>
+                    <li>Specify font type, size, color, and effects</li>
+                    <li>Set background colors and images</li>
+                    <li>Control many aspects of text layout</li>
+                    <li>Set margins and borders</li>
+                    <li>Control list display</li>
+                    <li>Define table layout and display</li>
+                    <li>Control cursor display</li>
+                    <li>Create transitions</li>
+                    <li>Animate the values of CSS properties</li>
+                    <li>Design multicolumn layouts</li>
+                    <li>Use any of thousands of fonts</li>
+                </ul><br>
+                <dt>It's often a good idea to <em>normalize</em> before you stylize!</dt><br>
+                <dd>Default Styles aren't very attractive</dd>
+                <dd>Default Styles might act differently in different browsers</dd>
+                <dd>Establishing a baseline to fix the ugliness of default browsers and inconsistencies is a good idea</dd><br>
+                <dt>HTML Boilerplate is web page of...</dt><br>
+                <dd>A group of experienced web developers that provide a template  for creating HTML5 websites</dd><br>
+                <dd>Also provide two style sheets
+                    <ul>
+                        <li>Normalize.css</li>
+                        <li>Main.css</li>
+                    </ul><br></dd>
+                <dt>Costumizing your styling is possible by creating your own style sheets or adding to the main.css stylesheet
+                <ul><br>
+                    <li>Background properties</li>
+                    <li>Border properties</li>
+                    <li>Float and alignment properties</li>
+                    <li>List properties</li>
+                    <li>Margin properties</li>
+                    <li>Padding and positioning</li>
+                    <li>Size properties</li>
+                    <li>Transition properties</li>
+                    <li>Transform properties</li>
+                </ul></dt><br>
+            <li>Using Different Kinds of Style Sheets</li>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 1 Apartado 4">CSS Structure and Syntax</h2>
+        <p><ul>
+            <li><dt>Each style sheet is made up of style rules containing two parts</dt></li><br>
+                <dd>Selector</dd><br>                   
+                <dd>Declaration<br>
+                    <ul>
+                        <li>Property</li>
+                        <li>Value</li>
+                     </ul><br>
+                        <img src="img_selector.gif" alt="example image" style="width:20em;height:5em;">
+                </dd></ul>
+            <ul><li>Declarations can configure a single or multiple values</li><br>
+                <ul>
+                    <li>H1 {color:teal;}</li>
+                    <li>H1 {font-family:Arial;}</li>
+                    <li>H1 {color:teal; font-family:Arial;}</li>
+                </ul><br>
+                <li>Whitespace is irrelevant but each designer will have their own preference as to how they write CSS style rules</li>
+                <li><dt>Style sheets override the browsers default styling and your style declarations will alter the final appearance of the web page in the browser
+                </dt></li><br>
+                <dd><em>Keep in mind that users can override your styles!</em></dd><br>
+                 <li><dt>Keep in mind that punctuation is KEY in CSS!</dt></li><br>
+                <dd>Mind your curly brackets and semicolons as mistyping will prevent styles from being applied!</dd>
+                <dd>Use a validation service like <a href="http://jigsaw.w3.org/css-validator"; title="Validation page"; target="blank">http://jigsaw.w3.org/css-validator </a> to help find problems in your style sheets</dd>
+            </ul>
+                <ul><li>Selectors</li><br>
+                <ul>
+                    <li>The universal selector(*) - matches any element and is often used for global properties</li><br>
+                        <ul>
+                            <li><i>* {margin:0px;}</i></li>
+                            <li>The most blunt selector there is, extremely powerful but not specific</li>
+                        </ul><br>
+                    <li>The element type selector</li><br>
+                        <ul>
+                            <li>Select a particular element such as h1,p,a,div,etc...</li>
+                            <li>Works the same as universal but with a single element</li>
+                        </ul><br>
+                    <li>ID selectors - select an element according to its ID attribute</li><br>
+                        <ul>
+                            <li>ID attributes are designed to be unique within a single HTML document providing extreme levels of precision with CSS</li>
+                            <li>To use you preface the value of the ID you want to select with # Symbol</li><br>
+                                <ul>
+                                    <li><i>#home-image {transform: rotate(-70deg);}</i></li>
+                                     <li><i>#container {background-color:orange;}</i></li>
+                                </ul><br>
+                        </ul>
+                        <li>Class selectors - specify certain instances of an HTML markup element</li><br>
+                        <ul>
+                            <li>To use you combine the HTML markup element with the global "class" attribute</li>
+                            <li>Then write CSS style rules to target a class prefacing the class name with a (.)</li><br>
+                                <ul>
+                                    <li><i>.warning {color:red;}</i></li>
+                                     <li><i>H1.warning {color:red; font-weight:bolder;}</i></li><br>
+                                </ul>
+                            <li>Elements are allowed to have multiple class i.e &lt;div class="myclass1 myclass2"&gt;</li>
+                        </ul><br>
+                         <li>Selecting Multiple elements</li><br>
+                        <ul>
+                            <li>Multiple elements can easily be selected</li>
+                            <li>Div, p, ul {...}</li>
+                        </ul><br>
+                         <li>Selecting child elements</li><br>
+                        <ul>
+                            <li>If you want to select all the &lt;div&gt; element or other parent-child relationship</li>
+                            <li>Div p {...}</li>
+                        </ul><br>
+                        <li>Selecting by attribute</li><br>
+                        <ul>
+                            <li>You can select an element based on the specific content of an attribute</li>
+                            <li>A[href=http://www.google.com] {...}</li>
+                        </ul><br>
+                        <li>Selecting Pseudo-classes</li><br>
+                        <ul>
+                            <li>Pseudo classes refer to the special state of an element</li>
+                            <li>The most common pseudo class are those for the &lt;a&gt; element</li>
+                                <ul>
+                                    <li>Link (unvisited)</li>
+                                    <li>Visited</li>
+                                    <li>Hover</li>
+                                    <li>Active (when the link is clicked)</li>
+                                </ul>
+                            <li>A:hover {...}</li>
+                        </ul><br>
+                         <li>Selecting Pseudo elements</li><br>
+                        <ul>
+                            <li>Refers to a specified part of an element such as the first letter or the first line of the element</li>
+                            <li>&lt;p&gt; This is some text. &lt;/p&gt;
+                                <ul>
+                                    <li>You can select the letter Tusing this selector - p::first-letter {...}</li>
+                                </ul>
+                            </li>
+                        </ul><br>
+                         <li>Case insensitivity</li><br>
+                        <ul>
+                            <li>For the most part CSS selectors and rules are case-insensitive</li>
+                                <ul>
+                                    <li>Div {Background-Color:GREEN;}</li>
+                                    <li>DIV {background-coloR:green;}</li><br>
+                                </ul>
+                            <li>The only exception is when selecting classes and ids which ARE case-sensitive!</li>
+                        </ul><br>
+                        <li>Order of Precedence</li><br>
+                        <ul>
+                            <li>A very important concept that can be frustrating if you are new to CSS</li>
+                             <li>If you arte struggling with rules not being applied check</li><br>
+                                <ul>
+                                    <li>Case sensitivity for classes and ids</li>
+                                    <li>Appropiate class values for elements</li>
+                                    <li>Precedence</li><br>
+                                </ul>
+                            <li>Understanding the rules for precedence is key!</li>
+                            <li>Order of Precedence - three principles to remember</li><br>
+                                <ol>
+                                    <li>The more specific the selector the higher the precedence</li><br>
+                                    <ul>
+                                        <li>Id>Class>Element</li>
+                                        <li><dt>The more detailed the selector the higher the precedence</dt><br>
+                                            <dd>div {font-size: 10px;}</dd>
+                                            <dd>#myId {font-size: 12px;}</dd>
+                                            <dd>.myClass {font-size: 14px;}</dd><br>
+                                            <dd>&lt;div id="myId" class="myClass"&gt;Some text&lt;/div&gt;</dd>
+                                        </li><br>
+                                    </ul>
+                                    <li>If no style is specified, elements inherit styles from their parent container or use the browser´s default styling</li>
+                                    <li>All else being equal, the last declared rule wins</li>
+                                </ol>
+                        </ul>
+                </ul>
+            </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+     <div>
+        <h2 id="Modulo 1 Apartado 5">Using Different Kinds of Style Sheets</h2>
+        <p><ul>
+            <li>Three options for styling exist</li><br>
+                <ul>
+                        <li>Inline styles</li>
+                        <li>Internal style sheets</li>
+                        <li>External style sheets</li>
+                </ul><br>
+            <li>Of the three we want to use external style sheets whenever possible</li>
+            <li>The only reason to use inline styles is when you truly will never need to reuse the style again and internal style sheets when a page is unique in its styling</li>
+            </ul></p>
+        <p><ul>
+            <li>External style sheets are connected to an HTML file using the &lt;link&gt; element</li><br>
+                <ul>
+                        <li>Attributes</li>
+                        <ul>
+                            <li>Rel - indicates the relationship of the linked document and the document linking to it and in this case it always be rel="stylesheet"</li>
+                            <li>Type is not required</li>
+                            <li>Href - indicates the location of the linked stylesheet and may use an absolute or a relative link</li><br>
+                            <ul>
+                                <li>You shouldn't normally use a style sheet that doesn't reside on your website because you would not be able to control look and feel</li>
+                                <li>One exception is to use <a href="http://www.w3.org/StyleSheets/Core"; title="W3 page"; target="blank">http://www.w3.org/StyleSheets/Core</a> to link to the standards style sheets in order to quickly add style to your web page to test styles in different browsers</li>
+                            </ul>
+                        </ul>
+                </ul><br>
+            <li>Another method for including style sheets in your HTML document is with the @import statement</li><br>
+                <ul>
+                    <li>Instruct the browser to load an external style sheet and use its styles</li>
+                    <li>&lt;style&gt; @import http://www.w3.org/StyleSheets/Core/stylesheet.css &lt;/style&gt
+                    </li><br>
+                </ul>
+            <li>Minimize complexity and link as few style sheets as possible which wil aldo imporve browser performance</li>
+            </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <h1>MODULE 2: UNDERSTANDING THE CSS BOX MODEL</h1>
+    <div>
+        <h2 id="Modulo 2 Apartado 1">Understanding The CSS Box Model</h2>
+        <p><ul>
+                <li>What is the Box Model?</li>
+                <li>Height and Width</li>
+                <li>Margin and Padding</li>
+                <li>Working with Borders</li>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 2 Apartado 2">What is The Box Model?</h2>
+        <p><ul>
+                <li>All elements in CSS are treated as a box essentially wrapping around every single HTML element on the page</li>
+                <li>The box consists of four properties</li><br>
+                <ul>
+                    <li>Margins</li>
+                    <li>Borders</li>
+                    <li>Padding</li>
+                    <li>Content</li>
+                </ul><br>
+                    <img src="Box%20Model.png" alt="example image" style="width:20em;height:12em;float: center; margin-top: -90px; margin-left: 150px">
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 2 Apartado 3">Height and Width</h2>
+        <p><ul>
+                <li>The height and width properties of the box deal with the dimensions of the content area and are gievn as # of pixles or percentage</li><br>
+                <ul>
+                    <li>Height:100px;</li>
+                    <li>Height:80%;</li>
+                    <li>Height:auto;</li>
+                </ul><br>
+                <li>If the amount of content exceeds the size of the box surrounding its element the content will flow out of the box and result in a badly formatted web page</li><br>
+                <ul>
+                    <li>Use the overflow property to prevent this</li><br>
+                        <ul>
+                            <li>Visible</li>
+                            <li>Hidden</li>
+                            <li>Scroll</li>
+                            <li>Auto</li>
+                        </ul>
+                </ul><br>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 2 Apartado 4">Margin and Padding</h2>
+        <p><ul>
+                <li>The padding controls the free space around the content inside each box while the margin controls the free space around the outside of the border of the box</li><br>
+                <li>Both of these controls are transparent and therefore changing their color is not possible however, the width can be modified to adjust the positioning of elements</li><br>
+                <li>Several syntax options exist for both margins and padding</li><br>
+                <li>Margin and Padding syntax</li><br>
+                <ul>
+                    <li>Margin: 25px; sets all four margins to 25px</li>
+                    <li>Margin: 25px 50px; sets the top and bottom margins to 25px and the left and right margins to 50px</li>
+                    <li>{Margin-top: 25px; margin-right: 50px; margin-bottom: 50px; margin-left: 10px;}</li>
+                    <li>Margin: 25px 50px 50px 10px (goes clockwise starting from top)</li>
+                </ul><br>
+                <li>Additionally margins (not padding) can have negative values</li>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 2 Apartado 5">Working With Borders</h2>
+        <p><ul>
+                <li>The CSS border properties allow you to set various properties for the border of each element in the CSS box model</li><br>
+                <ul>
+                    <li>Border-width</li>
+                    <li>Border-color</li>
+                    <li>Border-style</li>
+                    <li>Border-radius</li>
+                </ul><br>
+                <li>The border-width is the thickness of the border that surrounds each HTML element</li><br>
+                <ul>
+                    <li>Normally set in pixels</li>
+                    <li>Provides the alternative if using one of three predefined values</li><br>
+                    <ul>
+                        <li>Thin</li>
+                        <li>Medium</li>
+                        <li>Thick</li>
+                    </ul><br>
+                    <li>Use the same syntax as padding and margins</li><br>
+                    <ul>
+                        <li>Border-width: 25px - sets all borders to 25px</li>
+                        <li>Border-width: 25px thin - sets the top and the botttom 25px and left/right to thin</li>
+                        <li>Border-top-width: 30px</li><br>
+                    </ul>
+                </ul>
+                <li>The border-color is used to configure the color of the border</li><br>
+                <ul>
+                    <li>Use one of 140 predefined color names</li><br>
+                    <li>Use RGB notation</li><br>
+                    <ul>
+                        <li>All web colors are represented by the three primary colors of Red, Green and Blue</li>
+                        <li>RGB (0,255,0) or RGB (255,0,255)</li>
+                    </ul><br>
+                    <li>Use hexadecimal notation - uses 6 digits to represent color</li><br>
+                    <ul>
+                        <li>00 00 00</li>
+                        <li>FF 00 00</li>
+                        <li>FF 00 FF</li>
+                    </ul><br>
+                    <li>Set to transparent</li><br>
+                </ul>
+                <li>Border-style is uesed to configure the various border styles which are available</li><br>
+                <ul>
+                    <li>None</li>
+                        <p style=
+                            "Width: 50px;
+                            Margin: 10px;
+                            Border: None;
+                            Padding: 1.8em;
+                            text-align: center;
+                            background-color: burlywood;
+                            Float: center">
+                            None
+                        </p>
+                    <li>Dotted</li>
+                        <p style=
+                            "Width: 50px;
+                            Margin: 10px;
+                            Border: Dotted;
+                            Padding: 1.8em;
+                            text-align: center;
+                            background-color: burlywood;
+                            Float: center">
+                            Dotted
+                        </p>
+                    <li>Dashed</li>
+                        <p style=
+                            "Width: 50px;
+                            Margin: 10px;
+                            Border: Dashed;
+                            Padding: 1.8em;
+                            text-align: center;
+                            background-color: burlywood;
+                            Float: center">
+                            Dashed
+                        </p>
+                    <li>Solid</li>
+                        <p style=
+                            "Width: 50px;
+                            Margin: 10px;
+                            Border: Solid;
+                            Padding: 1.8em;
+                            text-align: center;
+                            background-color: burlywood;
+                            Float: center">
+                            Solid
+                        </p>
+                    <li>Double</li>
+                        <p style=
+                            "Width: 50px;
+                            Margin: 10px;
+                            Border: Double;
+                            Padding: 1.8em;
+                            text-align: center;
+                            background-color: burlywood;
+                            Float: center">
+                            Double
+                        </p>
+                    <li>Groove</li>
+                        <p style=
+                            "Width: 50px;
+                            Margin: 10px;
+                            Border: Groove;
+                            Padding: 1.8em;
+                            text-align: center;
+                            background-color: burlywood;
+                            Float: center">
+                            Groove
+                        </p>
+                    <li>Ridge</li>
+                        <p style=
+                            "Width: 50px;
+                            Margin: 10px;
+                            Border: Ridge;
+                            Padding: 1.8em;
+                            text-align: center;
+                            background-color: burlywood;
+                            Float: center">
+                            Ridge
+                        </p>
+                    <li>Inset</li>
+                        <p style=
+                            "Width: 50px;
+                            Margin: 10px;
+                            Border: Inset;
+                            Padding: 1.8em;
+                            text-align: center;
+                            background-color: burlywood;
+                            Float: center">
+                            Inset
+                        </p>
+                    <li>Outset</li>
+                        <p style=
+                            "Width: 50px;
+                            Margin: 10px;
+                            Border: Outset;
+                            Padding: 1.8em;
+                            text-align: center;
+                            background-color: burlywood;
+                            Float: center">
+                            Outset
+                        </p>
+                </ul><br>
+                <li>Border-radius is used to create borders with rounded corners</li><br>
+                    <ul>
+                        <li>Values are commonly given in pixel or percentage</li><br>
+                        <li>Can be set individually for the four corners</li><br>
+                        <ul>
+                            <li>Top-left</li>
+                            <li>Top-right</li>
+                            <li>Bottom-left</li>
+                            <li>Bottom-right</li><br>
+                        </ul>
+                        <li>Examples</li><br>
+                        <ul>
+                            <li>Border-radius: 5px;</li><br>                           
+                        </ul>
+                        <li>Alternatively you can simply use the BORDER property as shorthand specifying</li><br>
+                        <ul>
+                            <li>Width</li>
+                            <li>Style</li>
+                            <li>Color</li><br>
+                        </ul>
+                         <li>Border: 5px solid green</li><br>
+                        <ul>
+                            <li>Border-radius cannot be configured using this shorthand method</li>
+                        </ul>
+                    </ul><br>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+<h1>MODULE 3: WORKING WITH PAGE LAYOUTS</h1>
+    <div>
+        <h2 id="Modulo 3 Apartado 1">Positioning Elements</h2>
+        <p><ul>
+            <li><dt>Positioning elements</dt></li><br>
+                <dd>As the name implies the CSS positioning property is used to configure the location of the element on the page</dd><br>
+                <dd>In the case of an overlap the positioning element specifies which element sould be on top</dd><br>
+                <dd>Four separate methods exist for positioning elements</dd>
+        </ul></p>
+        <p><ol>
+            <li>Static positioning</li><br>
+            <ul>
+                <li>Elements are positioned according to the normal flow of the page</li>
+                <li>All HTML elements use static positioning by default</li>
+                <li>There generally isn't a reason to specify this type of position unless you are attempting to override another style rule</li>
+            </ul><br>
+            <li>Relative positioning</li><br>
+            <ul>
+            <li>Relative positioning is a method that positions an element "relative to its <b>normal</b> position"</li><br>
+                <ul>
+                    <li>Normal is the default position when no positioning rule is specified</li>
+                    <li>Normal is also used when static positioning is in place</li>
+                </ul><br>
+            <li>So if an element would <i>normally</i> be directly beneath the preceding element using relative positioning will change that position in comparison with the <i>normal</i> position</li><br>
+            <li>Relative position can result in elements that overlap in which case you have to use the z-index property</li><br>
+                <ul>
+                    <li>Element with the greater z-index value will be positioned in front</li>
+                </ul><br>
+            </ul>
+            <li>Fixed positioning</li><br>
+            <ul>
+                <li>Fixed positioning means that an element will always stay at its assigned location and will not move even when the page is scrolled</li><br>
+                    <ul>
+                        <li>Headers</li>
+                        <li>Social sharing buttons</li>
+                        <li>Footers</li>
+                    </ul><br>
+                <li>When using fixed positioning you can use the top property to specify the number of pixels the element should be from the top of the page and the left property for distance from left of the page</li><br>
+            </ul>
+            <li>Absolute positioning</li><br>
+            <ul>
+                <li>Absolute positioning means that an element is positioned relative to the first parent element which has a position other than static</li><br>
+                    <ul>
+                        <li>If none is found it is positioned relative to the page</li>
+                        <li>This positioning is similar to relative positioning except that the element is positioned relative to its parent instead of its normal position</li>
+                    </ul><br>
+            </ul>
+        </ol></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 3 Apartado 2">Floating Elements</h2>
+        <p><ul>
+            <li>Floating Elements</li><br>
+            <ul>
+                <li>Floating is a technique ised to arrenage elements on a page by taking them out of the normal flow</li><br>
+                <ul>
+                    <li>Float: left; - pushes the element to the left the furthest it can go</li>
+                    <li>Float: right; - pushes the element to the right the furthest it can go</li>
+                </ul><br>
+                <li>Items that are not configured to float other objects will follow normal flow and flow around the floated element</li><br>
+        </ul></ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 3 Apartado 3">Controlling Display And Visibility</h2>
+        <p><ul>
+            <li><dt>Floating Elements</dt></li><br>
+                <ul>
+                    <li>In addition to controlling the positioning of elements using position and gloat you can control the visibility of those elements on the page as well</li><br>
+                    <li>The properties allow you to remove or hide elements when necessary</li><br>
+                    <ul>
+                        <li>Display</li>
+                        <li>Visibility</li>
+                    </ul>
+                </ul><br>
+                <li>The two CSS properties that control whether or not elements appear and how they appear are DISPLAY  and VISIBILITY</li><br>
+                <ul>
+                    <li>Display controls how the element is dispalyed and has three possible values</li><br>
+                    <ul>
+                        <li>None - the element disappears from the page</li>
+                        <li>Inline - the element is displayed as an inline element and thus does not start and end with a new line</li>
+                        <li>Block - the element is displayed as a block element and starts and ends with a new line</li>
+                    </ul><br>
+                    <li>Visibility can be used to hide an element</li><br>
+                    <ul>
+                        <li>Visibility: hidden;</li>
+                        <li>This hides the element but it is still present on the page</li><br>
+                    </ul>
+                </ul>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+<h1>MODULE 4: USING COLORS AND BACKGROUNDS</h1>
+    <div>
+        <h2 id="Modulo 4 Apartado 1">Working With Colors</h2>
+        <p><ul>
+            <li>CSS allows authors to define colors in two separate ways</li><br>
+            <ul>
+                <li>Name</li><br>
+                <li>Number</li><br>
+                <ul>
+                    <li>RGB notation</li>
+                    <li>Hex notation</li><br>
+                </ul>
+                <li>There are 16 basic colors that are a part of the CSS3 specifications along with a much longer list of extended colors which are supported by today's browsers</li>
+            </ul><br>    
+        </ul></p>
+        <p><ul>
+            <li>When using numbers either RGB or Hex notation can be used and in both cases yoe are choosing the appropiate mixture of Red, Green and Blue</li><br>
+            <ul>
+                <li>RGB notation</li><br>
+                <ul>
+                    <li>The first number is the amount  of red, the second the amount of green, the third the amount of blue</li>
+                    <li>RGB (0,255,0) - Pure Green or RGB(0,0,255) - pure Blue</li>
+                    <li>The actual code would be {color: rgb(0,255,0);}</li><br>
+                </ul>
+                <li>Use hexadecimal notation - uses 6 digits to represent color nut is the same where the first 2 digits are for red and so on</li><br>
+                <ul>
+                    <li>00 00 00</li>
+                    <li>FF 00 00</li>
+                    <li>FF 00 FF</li>
+                    <li>The actual code would be {color: #00FFFF;}</li>
+                </ul>
+            </ul><br>
+         </ul></p>
+            <p><ul>
+            <li>Colors can be redefined using two CSS properties</li><br>
+            <ul>
+                <li>Color</li><br>
+                <ul>
+                    <li>Defines font color</li>
+                    <li>Also used to define colors for links in various states using pseudo classes</li>
+                </ul>
+                <li>Background-color or Background</li><br>
+                <ul>
+                    <li>Defines the color of background for an entire page or for particular elements on the page</li>
+                </ul>
+            </ul><br>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 4 Apartado 2">Working With Backgrounds</h2>
+        <p><ul>
+            <li>There are two options for configuring the background of an element in CSS</li><br>
+                <ul>
+                    <li>Background-color</li>
+                    <li>Background-image</li><br>
+                </ul>
+            <li>The use of the background-color property is similar to how yoe specify the color for a border in CSS boxes</li>
+            <ul>
+                <li>Use the color name</li>
+                <li>Use RGB notation</li>
+                <li>Use Hexadecimal notation</li><br>
+            </ul>
+            <li>In order to spice things up a bit some designers utilize the background-image property instead of a standard color</li><br>
+            <li>CSS provides great flexibility with how we want the image to be displayed</li><br>
+            <li>The first step is to specify the URL to the image using the background-image property</li><br>
+            <ul>
+                <li>Background-image:url("imagefile.jpg");</li><br>
+            </ul>
+        </ul></p>
+        <p><ul>
+            <li>By default the image is placed in the top-left corner of the element and will automatically repeat itself both wertically and horizontally</li><br>
+            <li>If this is not desirable you can use the background-repeat property to modify the default setting</li><br>
+            <ul>
+                <li>Repeat - the default setting repeats horizontally and vertically</li>
+                <li>Repeat-x - the image will only repeat horizontally</li>
+                <li>Repeat-y - the image will only repeat vertically</li>
+                <li>No-repeat - the image will not be repeated</li><br>
+            </ul>
+            <li>Examples</li><br>
+                <ul>
+                    <li>Background-repeat: repeat-x;</li>
+                    <li>Background-repeat: no-repeat;</li><br>
+                </ul>
+            <li>By default the background image will scroll with the page but this can also be configured using the background-attachment property</li><br>
+                <ul>
+                    <li>Fixed</li>
+                    <li>Scroll</li><br>
+                </ul>
+            <li>The background-position property is very useful if you want to specify which area of the background image you would like to display</li><br>
+                <ul>
+                    <li>This is useful when you have an image that is larger than the element for which it is serving as a background</li>
+                    <li>If you have an image that is <b>200x300</b> and an element for which it portion of the image (the top left portion) will display</li>
+                    <li>In order to display a different portion of the image you would need to change the position of the image</li><br>
+                </ul>
+            <li>The most common way is to specify the background-position value using pixels and the syntax background-position: xpos ypos</li><br>
+                <ul>
+                    <li>The first number shifts horizontally</li><br>
+                    <ul>
+                        <li>Negative values shift the image to the left</li>
+                        <li>Positive values shift the image to the right</li><br>
+                    </ul>
+                    <li>The second number shifts vertically</li><br>
+                    <ul>
+                        <li>Negative values shift the image to the up</li>
+                        <li>Positive values shift the image to the down</li><br>
+                    </ul>
+                </ul>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+<h1>MODULE 5: WEB TYPOGRAPHY</h1>
+    <div>
+        <h2 id="Modulo 5 Apartado 1">Understanding Fonts</h2>
+        <p><ul>
+            <li>A font is a set of characters that share a similar desing</li><br>
+                <ul>
+                    <li>Times New Roman</li>
+                    <li>Arial</li>
+                    <li>Verdana</li>
+                    <li>Comic Sans</li><br>
+                </ul>
+            <li>Font properties in CSS are used to format the appearance of words and text on a page</li>
+            <li>The font property is concerned with how the characters look while the text property is concerned with everything else</li><br>
+        </ul></p>
+        <p><ul>
+            <li>Font families define the three major categories of font types with two additional types</li><br>
+            <ul>
+                <p><li>Serif</li>
+                <img src="fuentes%20de%20letras%20(serif).png" alt="example image" style="width:5em;height:2.2em;float: center; margin-top: -30px; margin-left: 90px"></p>
+                <p><li>San serif</li>
+                <img src="fuentes%20de%20letras%20(Sans-serif).png" alt="example image" style="width:8em;height:2em;float: center; margin-top: -30px; margin-left: 90px"></p>
+                <p><li>Monospace</li>
+                <img src="fuentes%20de%20letras%20(Monospace).png" alt="example image" style="width:8em;height:2em;float: center; margin-top: -30px; margin-left: 90px"></p>
+                <p><li>Cursive</li>
+                <img src="fuentes%20de%20letras%20(Cursive).png" alt="example image" style="width:7em;height:2em;float: center; margin-top: -30px; margin-left: 90px"></p>
+                <p><li>Fantasy</li>
+                <img src="fuentes%20de%20letras%20(Fantasy).png" alt="example image" style="width:7em;height:2.5em;float: center; margin-top: -30px; margin-left: 90px"></p>
+                <br>
+            </ul>
+            <li>When specifying the font-family you should always specify multiple fonts in case the user does not have the font you specify</li><br>
+            <li>The font-size property sets the size of the text and can be set in multiple ways</li><br>
+                <ul>
+                    <li>Pixels (px)</li>
+                    <li>Em</li>
+                    <li>Percentage (%)</li>
+                    <li>Keywords</li><br>
+                </ul>
+                <p style="
+                Width:300px;
+                height: auto;
+                Margin: 0.2em 0em;
+                Border: Solid;
+                Border-color: Black;
+                Border-radius: 15px;
+                Padding: 0.5em;
+                text-align: center;
+                font-size: 1.2em;
+                color:blanchedalmond;
+                background-color:darkolivegreen;
+                position: relative;
+                float:right;
+                margin-top: -30px;
+                margin-right: 400px;">Ems and percentage are the recommended methods because users can change font sizes in the browser!
+                </p>
+            <li>Examples</li><br>
+                <ul>
+                    <li>Font-size: 20px;</li>
+                    <li>Font-size: 1.5em;</li>
+                    <li>Font-size: 150%;</li>
+                    <li>Font-size: large;</li><br>
+                </ul>
+            <li>Font-style property - used to specify different styles</li><br>
+                <ul>
+                    <li>Normal</li>
+                    <li>Italic</li>
+                    <li>Oblique</li><br>
+                </ul>
+            <li>Font-weight property - used to specify bold text and works as the counterpart to font-style</li><br>
+                <ul>
+                    <li>Normal, bold, or bolder (some browsers may not support bolder)</li>
+                    <li>Numbers 100-900 (above 600 is considered bold)</li><br>
+                </ul>
+            <li>CSS2 introduced the ability to download fonts to a user's browser using the special @font-face rule</li><br>
+                <ul>
+                    <li>It was a tough beginning and the rule was removed in 2.1 and then readded in CSS3</li>
+                    <li>Today @font-face is supproted by virtually all browsers and gives web designers far more options than ever before</li><br>
+                </ul>
+            <li>Font file formats</li><br>
+                <ul>
+                    <li>TrueType - standard format been around since the 80s</li>
+                    <li>OpenType - based on TrueType and supports some advanced typographical features</li>
+                    <li>Embedded OpenType - an IE only font file format</li>
+                    <li>Web Open Font Format (WOFF) - not a new format but a new way to package OpenType and TrueType formats</li><br>
+                </ul>
+            <li>Steps to using additional fonts</li><br>
+                <ul>
+                    <li>Find the font</li><br>
+                    <ul>
+                        <li>Purchase</li>
+                        <li>Pay for a font service</li>
+                        <li>Use open source fonts</li><br>
+                    </ul>
+                    <li>Link the font using the @font-face rule</li><br>
+                    <ul style="font-family: Calibri; font-weight: bold;">
+                        <li>@font-face {</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pay for a font service</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src: local("Baskerville");</li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url("Buenard-regular.ttf");</li>
+                        <li>&nbsp;&nbsp;&nbsp;}</li><br>
+                    </ul>
+                 </ul>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 5 Apartado 2">Working With Text Properties</h2>
+        <p><ul>
+            <li>Css text porperties allow you to set porperties that aren't related to the font of the text</li><br>
+                <ul>
+                    <li>Text color</li>
+                    <li>Text alignment</li>
+                    <li>Text decoration</li>
+                    <li>Letter spacing</li>
+                    <li>Word spacing</li>
+                    <li>Line height</li><br>
+                </ul>
+        </ul></p>
+        <p><ul>
+            <li>The text-alignment porperty is used to specify how text should ve aligned within an element on the screen</li><br>
+                <ul>
+                    <li>Left</li>
+                    <li>Right</li>
+                    <li>Centered</li>
+                    <li>Justified</li><br>
+                    <ul>
+                        <li>Text-align: Center</li>
+                        <li>Text-align: Left</li><br>
+                    </ul>
+                    <li>Left alingment is the deafult</li><br>
+                </ul>
+        </ul></p>
+        <p><ul>
+            <li>The text-declaration porperty is mainly used to specify whether or not text should be underlined though multiple values are possible for the porperty</li><br>
+                <ul>
+                    <li>None - default</li>
+                    <li>Underlined</li>
+                    <li>Overlined</li>
+                    <li>Line-through</li><br>
+                </ul>
+            <li>This is most commonly used to remove underlines from hyperlinks which will occur by default in most browsers</li><br>
+                <ul>
+                    <li>Text-decoration: none;</li><br>
+        </ul>
+        </ul></p>
+        <p><ul>
+            <li>Letter spacing is used to increase or decrease the spacing between letters in a word</li>
+            <li>The amount of spacing is specified in pixels</li><br>
+                <ul>
+                    <li>To increase space use positive value</li>
+                    <li>To decrease space use a negative value</li><br>
+                    <ul>
+                        <li>Letter-spacing:2px;</li><br>
+                    </ul>
+                </ul>
+        </ul></p>
+        <p><ul>
+            <li>Word spacing is used to increase or decrease the spacing between the actual words in a block of text</li><br>
+                <ul>
+                    <li>Similar in function to letter-spacing</li>
+                    <li>Positive values increase space and negative decrease space</li><br>
+                    <ul>
+                        <li>Word-spacing: 2px;</li><br>
+                    </ul>
+                </ul>
+        </ul></p>
+        <p><ul>
+            <li>Line height is used to set the spacing between each line of text</li>
+            <li>Can be set using multiple values</li><br>
+                <ul>
+                    <li>Number</li>
+                    <li>Specific length</li>
+                    <li>Percentage</li><br>
+                    <ul>
+                        <li>Line-height: 20px;</li>
+                        <li>Line-height: 120%;</li><br>
+                    </ul>
+                </ul>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 5 Apartado 3">Text And Shadow Effects</h2>
+        <p><ul>
+            <li>CSS3 contains many new porperties to style, alter, customize, tweak and enhance text on the page</li><br>
+            <li>As a result of these new properties the use of images to achieve desired text effects is greatly reduced and this has a positive effect on page load time and other advantages</li><br>
+                <ul>
+                    <li>Text takes up less storage space and downloads faster</li>
+                    <li>Screen readers and other types of alternative browsers can read text but not images</li>
+                    <li>Search engines can read and index text</li><br>
+                </ul>
+            <li>Shadows are a great tool for adding an illusion of depth to a web page</li><br>
+            <li>CSS3 provides two porperties that can be used to create shadows</li><br>
+                <ul>
+                    <li>Text-shadow</li>
+                    <li>Box-shadow</li><br>
+                </ul>
+            <li>By applying shadows in different ways you can create many types of effects</li><br>
+                <ul>
+                    <li>Drop shadows</li>
+                    <li>Letterpress text</li>
+                    <li>3D text</li><br>
+                </ul>
+        </ul></p>
+        <p><ul>
+            <li>Text-shadow - property used to create text shadows</li><br>
+            <li>At its simplest</li><br>
+                <ul>
+                    <li>Text-shadow: offset-x offset-y color</li>
+                    <li>H1 {text-shadow: 0.1em 0.1em #aaaaaa;}</li><br>
+                </ul>
+            <li>An additional optional parameter is the blur-radius which is used to make the shadow fussy and lighter</li><br>
+                <ul>
+                    <li>The larger the value the larger and lighter the blur will be</li><br>
+                </ul>
+            <li>The box-shadow is used to create one or more shadows for an element and has a similar syntax</li><br>
+                <ul>
+                    <li>Box-shadow: offset-x offset-y color</li>
+                    <li>Box-shadow: 4px 4px #777777;</li><br>
+                </ul>
+        </ul></p>
+        <p><ul>
+            <li>Inset text is text that appears to recede into the background</li><br>
+                <ul>
+                    <li>The key is to use a text shadow that'slighter then the text background color causing the text to look like it's inset and a shdow is being cast inside the letters</li>
+                    <li>The lighter the shadow and darker background makes the text look inset</li><br>
+                </ul>
+        </ul></p>
+        <p><ul>
+            <li>Creating 3D text is the opposite of inset text in which the text appears to protrude from the page</li><br>
+                <ul>
+                    <li>The key is to use multiple text shadows together along with another CSS3 trick which is opacity</li>
+                    <li>It can get complicated but the effect is fantastic!</li><br>
+                </ul>
+        </ul></p>
+        <p><ul>
+            <li>You can also use transparency along with a new porperty called background-clip to do a much more realistic inset otherwise known as a letterpress effect</li><br>
+                <ul>
+                    <li>The most common use of the background-clip porperty is to add a background image to text which creates some stunning effects</li>
+                    <li>This porperty specifies whether the background extends under the border of the object</li><br>
+                </ul>
+        </ul></p>
+     <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+<h1>MODULE 6: LINKS, LISTS AND TABLES</h1>
+    <div>
+        <h2 id="Modulo 6 Apartado 1">Working With Lists</h2>
+        <p><ul>
+            <li>Lists are powerful tools to group together similar elements and give site visitors an easy way to view groups of information</li><br>
+                <ul>
+                    <li>Lists can be created for just about any type of content</li><br>
+                    <li>Lists use at list two components</li><br>
+                    <ul>
+                        <li>A markup element that tells the browser a list is on the way</li>
+                        <li>A markup element that tells the browser this particular item goes into a list</li><br>
+                    </ul>
+                    <li>Three types of lists</li><br>
+                    <ul>
+                        <li>Ordered lists</li>
+                        <li>Unordered lists</li>
+                        <li>Definition lists</li>
+                    </ul><br>
+                    <li>All list types can be styled using CSS3</li><br>
+                </ul>
+            <li>The method for styling list is the list-style-type property which allows you to set the item markers for your list</li><br>
+                <ul>
+                    <li>Item markers refer to the characters which are used to delineate list items</li>
+                    <li>Bullets for an unordered list by default</li>
+                    <li>Numbers for an ordered list by default</li><br>
+                </ul>
+            <li>Using the list-style-type property for ordered lists con select the following values</li><br>
+                <ul>
+                    <li>Lower-roman - {i,ii,iii}</li>
+                    <li>Upper-roman - {I,II,III}</li>
+                    <li>Decimal - default</li>
+                    <li>Decimal-leading-zero - the number with a leading zero</li>
+                    <li>Lower-alpha</li>
+                    <li>Lower-greek</li>
+                    <li>Lower-alpha</li>
+                </ul><br>
+            <li>Using the list-style-type property for unordered lists allows you to specigy the particular shape or symbol that you want to use as a bullet</li><br>
+                <ul>
+                    <li>The default marker is a disc (filled circle)</li>
+                    <li>Other options</li><br>
+                    <ul>
+                        <li>Square</li>
+                        <li>Circle</li>
+                    </ul><br>
+                </ul>
+            <li>In addition you can disable the marker entirely using the list-style-type property with a value of none</li><br>
+            <li>An additional option if you do not desire any of the additional markers is to use an image of your own as the marker</li><br>
+            <li>You can use the list-style-image property to specify the url of the image that you would like to use</li><br>
+                <ul>
+                    <li>List-style-image:url('myBullet.gif');</li>
+                </ul><br>
+        </ul></p>
+        <p><ul>
+            <li>The list-style-position property is used to specify whether the list item markers should appear  inside or outside the content flow</li><br>
+                <ul>
+                    <li>Two values are "inside" and "outside"</li><br>
+                </ul>
+            <li>By default list items are outside and there is a certain amount of indentation</li><br>
+            <li>If this is modified and set to inside the item markers are displayed after the indentation which simply results in more indentation</li><br>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 6 Apartado 2">Using Navigation Bars</h2>
+        <p><ul>
+            <li>Navigation bars are commonly created as a combination of lists and links and are used to navigate to different areas of a specific website</li><br>
+            <li>The individual items in a navigation bar are simply hyperlinks that use a relative link</li><br>
+            <li>Links can be styled using all the styles discussed thus far</li><br>
+                <ul>
+                    <li>Colors</li><br>
+                    <li>Backgrounds</li><br>
+                    <li>Pseudo classes</li><br>
+                </ul>
+         </ul></p>
+        <p><h3>HOW TO CREATE A NAVIGATION BAR</h3>
+        <ol>
+            <li>The first step to creating a navigation bar is to create an unordered list of items for the menu and make those items hyperlinks to other pages</li><br>
+            <li>Typically you would then use the list-style-type: none; declaration to remove default bullet points</li><br>
+            <li>Next you wuold style the bullet points</li><br>
+            <li>Then style the hyperlinks</li><br>
+            <li>Finally for horizontal navigation bars wuold use the float:left property</li><br>
+        </ol></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 6 Apartado 3">Working With Tables</h2>
+        <p><ul>
+            <li>HTML tables are a great way to arrange items in a grid format when it makes sense to do so but they aren't very attractive by default</li><br>
+            <li>Limited styling exists within HTML for tables and shouldn't be used anyway but CSS is very capable of creating good looking tables</li><br>
+            <li>The first set of porperties to consider</li><br>
+                <ul>
+                    <li>Borders</li><br>
+                    <li>Padding</li><br>
+                    <li>Margins</li><br>
+                </ul>
+            <li>Tables and table cells follow the same CSS box model as other elements and thus can be styled using those porperty</li><br>
+         </ul></p>
+        <p><h3>CREATING A TABLE</h3>
+        <ul>
+            <li>Tables are defined using &lt;table&gt;</li><br>
+            <li>Rows are defined with &lt;tr&gt;</li><br>
+            <li>Headings &lt;th&gt;</li><br>
+            <li>Individual cells &lt;td&gt;</li><br>
+            <li>Margins are ignored for &lt;th&gt; and &lt;td&gt;</li><br>
+            <ul>
+                <li>Cannot specify spacing between cells</li><br>
+                <li>A small gap exists by default</li><br>
+                <li>Use border-collapse:collapse on &lt;table&gt; to create only a single border</li><br>
+            </ul>
+              <p><table>
+                <tr><th>First Name</th><th>Last Name</th><th>Age</th></tr>
+                <tr><td>Patrick</td><td>Loner</td><td>38</td></tr>
+                <tr><td>John</td><td>Groh</td><td>39</td></tr>
+                <tr><td>Melissa</td><td>Olsen</td><td>37</td></tr>
+                <tr><td>Dana</td><td>Burkhardt</td><td>35</td></tr>
+            </table></ul></p>
+        <p><ul>
+            <li>The width and height of the table can be configured using those properties</li><br>
+                <ul>
+                    <li>Values are given using pixels or percentages</li><br>
+                    <li>Table {Width: 100%; Height: 500px;}</li><br>
+                    <li>This Values can also be set for &lt;tr&gt;, &lt;th&gt; or &lt;td&gt;</li><br>
+                    <li>You can set the width property for the individual table cells represented by the &lt;th&gt; or &lt;td&gt; elements</li><br>
+                    <li>Classes and IDs can be used in order to apply special styling to individual cells or to groups of cells</li><br>
+                    <ul>
+                        <li>&lt;td class="Firstcolumn"&gt;FirstName&lt;/td&gt;</li>
+                    </ul><br>
+                </ul>
+         </ul></p>
+        <p><ul>
+            <li>Text within the tables is able to be aligned either horizontally or vertically</li><br>
+                <ul>
+                    <li>Horizontal alignment is achived using the text-align property</li><br>
+                    <ul>
+                        <li>Center</li><br>
+                        <li>Left</li><br>
+                        <li>Right</li><br>
+                        <li>Justify</li><br>
+                    </ul>
+                    <li>Vertical alignment is achived using the vertical-align property</li><br>
+                    <ul>
+                        <li>Top</li><br>
+                        <li>Middle</li><br>
+                        <li>Bottom</li><br>
+                    </ul>
+                </ul>
+        </ul></p>
+        <p><ul>
+            <li>The tables can also be styled using properties for background, font and text just like other elements on the web page</li><br>
+                <ul>
+                    <li>Color</li><br>
+                    <li>Background-color</li><br>
+                </ul>
+            <li>In addition a special selector can be helpful when dealing with larger tables that are harder to read</li><br>
+                <ul>
+                    <li>One option is to color alternating rows</li><br>
+                    <li>Easily achived using the nth-child selector</li><br>
+                </ul>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+<h1>MODULE 7: DYNAMIC CSS3 PROPERTIES</h1>
+    <div>
+        <h2 id="Modulo 7 Apartado 1">Using Transforms</h2>
+        <p><ul>
+            <li>The transform property in CSS3 allows for advance management of web page elements</li><br>
+                <ul>
+                    <li>Rotation</li><br>
+                    <li>Scale</li><br>
+                    <li>Skew</li><br>
+                    <li>Reposition</li><br>
+                </ul>
+            <li>All of this while the margins are left intact which results in the rest of the page being left intact</li><br>
+            <li>Transforms may not be supported by every browser that accesses your site so you should check for support for implementing on your site</li><br>
+            <ul>
+                <li>Two types of transforms exist</li><br>
+                <ul>
+                    <li>2D</li><br>
+                    <li>3D</li><br>
+                </ul>
+            </ul>
+         </ul></p>
+        <p><ul>
+            <li>2D Transforms operate solely on the X and Y axis that traditional web development has been confined to and all major web browsers support this type of transform</li><br>
+            <li>Types of transforms that will change the object display</li><br>
+                <ul>
+                    <li>Translate - repositions an object</li><br>
+                    <li>Rotate - rotates an object</li><br>
+                    <li>Scale - strechs an object in on of the available directions</li><br>
+                    <li>Skew</li><br>
+                </ul>
+            <li>All of these options are accessed through a single style property known as transform</li><br>
+            <li>In the early days additional properties were required and are still ideal for coding to ensure support</li><br>
+            <ul>
+                <li>-moz-transform:</li><br>
+                <li>-webkit-transform:</li><br>
+                <li>-ms-transform:</li><br>
+                <li>-o-transform:</li><br>
+            </ul>
+         </ul></p>
+        <p><ul>
+            <li>The translate value of the transform property will reposition the object</li><br>
+                <ul>
+                    <li>Translate will occur to the right by default</li><br>
+                    <li>Translate occurs on the Xaxis by default</li><br>
+                    <ul>
+                        <li>-webkit-transform:translate(90px);</li><br>
+                        <li>-To be explicit you can use translateX or trasnlateY or specify both</li><br>
+                        <ul>
+                            <li>webkit-transform:translate(100px, 50px);</li><br>
+                        </ul>
+                    </ul>
+                </ul>
+            <li>The Scale property of the transform style is used to stretch or compress the elements on our page</li><br>
+            <li>Just like translate the default for scale is the equivalent of scaleXbut you can use scaleY when needed</li><br>
+            <ul>
+                <li>Scale does not use the PX notation but instead uses a fraction amount</li><br>
+                <li>-webkit-transform:scaleX(2.0);</li><br>
+            </ul>
+            <li>It is possible to use multiple transforms at simultaneously</li><br>
+            <li>Consider the requirement for translating the image to a different portion of the screen and then scaling it in size</li><br>
+            <ul>
+                <li>-webkit-transform:scaleY(0.5)translateX(90px);</li><br>
+            </ul>
+            <li>The transform property also allows us to change how elements look on the page by skewing them</li><br>
+            <ul>
+                <li>Changing a skew is change the 90 degree angles of intersection that exost on the box containing the element</li><br>
+                <li>A skew of 0deg would therefore have no effect but any other combination on either the X or Y axos would succeed</li><br>
+            </ul>
+            <li>In addition to 2D transforms 3D transforms are supported by most browsers currently and a part of the CSS3 specification</li><br>
+            <li>There are several steps and values which are used to achive 3D rotation</li><br>
+            <ul>
+                <li>rotateY</li><br>
+                <li>rotateX</li><br>
+                <li>rotate</li><br>
+                <li>rotate3D (shortcut notation)</li><br>
+                <li>Perspective (changes the perspective for a 3D view)</li><br>
+            </ul>
+         </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 id="Modulo 7 Apartado 2">Using Transitions</h2>
+        <p><ul>
+            <li>Transitions describe functional and gradual state canges to objects on the web and are possible with CSS3</li><br>
+            <li>Transitions are essentially a rudimentary form of animation</li><br>
+            <li>Any element on the page can have transitions applied but a common implementation is a hyperlink that appears as a tab which transitions into the page in order to be selected</li><br>
+            <li>To create a transition effect, you must specify two things</li><br>
+            <ul>
+                <li>The CSS porperty you want to add an effect to</li><br>
+                <li>The duration of the effect</li><br>
+                <li>This allows you to change properties values smoothly over a period of time</li><br>
+                <ul>
+                    <li style="font-weight: bold"><p style=color:rgb(200,15,55);>div <span style=color:black>{</span></p></li>
+                    <li style="font-weight: bold"><p style=color:rgb(255,0,0)>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;width: <span style=color:darkblue>100px;</span></p></li>
+                    <li style="font-weight: bold"><p style=color:rgb(255,0,0)>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;height: <span style=color:darkblue>100px;</span></p></li>
+                    <li style="font-weight: bold"><p style=color:rgb(255,0,0)>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background: <span style=color:darkblue>red;</span></p></li>
+                    <li style="font-weight: bold"><p style=color:rgb(255,0,0)>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-webkit-transition: <span style=color:darkblue>width 2s; </span><span style=color:darkgreen>/* Safari */</span></p></li>
+                    <li style="font-weight: bold"><p style=color:rgb(255,0,0)>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;transition: <span style=color:darkblue>width 2s; </span></p></li>
+                    <li style="font-weight: bold">}</li><br>
+                </ul>
+            </ul>
+         </ul></p>
+        <p><ul>
+            <li>Additional properties</li><br>
+                <ul>
+                    <li>Transition-timing-function - specifies the speed curve of the transition effect</li><br>
+                    <ul>
+                        <li>Ease (default) specifies a slow start then fast, then end slow</li><br>
+                        <li>Linear - transition same speed from start to end</li><br>
+                        <li>Ease-in</li><br>
+                        <li>Ease-out</li><br>
+                        <li>Ease-in-out</li><br>
+                    </ul>
+                    <li>Transation-delay</li><br>
+                    <li>Transation-duration</li><br>
+                </ul>
+         </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 class="transicion"; id="Modulo 7 Apartado 3">Using Animations</h2>
+        <p><ul>
+            <li>CSS allows designer to apply animations to HTML objects whic describe how the element changes from one state to another</li><br>
+            <li>Animations also provide the ability to determine what the states of animation will be</li><br>
+            <li>Animations are considered as a series of keyframes each of which is a state the object will pass through over the course of its animation</li><br>
+            <ul>
+                <li>Animations are configured usinga at @ rule with the keyword <i>keyframes</i></li><br>
+                <ul>
+                    <li>@-webkit-keyframes colorChange {from{background-color:red;} to {background-color:blue;}</li><br>
+                    <li>Then the animation is configured for a particular element by calling the name of the function using -webkit-animation:colorChange and specifying a timeframe</li>
+                </ul>
+            </ul>
+         </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+    <div>
+        <h2 class="transicion"; id="Modulo 7 Apartado 4">CSS Project</h2>
+        <p><ul>
+            <li style="color:darkcyan; font-weight: bold; font-size: 1.5em;">Now it's time for you to start practicing with your knowledge and imagination to create wonderful web pages</li><br>
+        </ul></p>
+    <a Class="Boton"; href="#Principio">Back to the top</a><br><br>
+    </div>
+</body>
+<footer>
+	<p>Authored by Francisco Javier Cabello Gonzalez &copy; 2022</p>
+</footer>
+</html>
